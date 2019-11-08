@@ -1,0 +1,11 @@
+D:\MatMagSoftware_git\01_Admin\02_Software\MatMag\MatMag\bin\Debug\MatMag.exe.config
+D:\MatMagSoftware_git\01_Admin\02_Software\MatMag\MatMag\bin\Debug\MatMag.exe
+D:\MatMagSoftware_git\01_Admin\02_Software\MatMag\MatMag\bin\Debug\MatMag.pdb
+D:\MatMagSoftware_git\01_Admin\02_Software\MatMag\MatMag\obj\Debug\MatMag.csprojAssemblyReference.cache
+D:\MatMagSoftware_git\01_Admin\02_Software\MatMag\MatMag\obj\Debug\MatMag.Form1.resources
+D:\MatMagSoftware_git\01_Admin\02_Software\MatMag\MatMag\obj\Debug\MatMag.Properties.Resources.resources
+D:\MatMagSoftware_git\01_Admin\02_Software\MatMag\MatMag\obj\Debug\MatMag.csproj.GenerateResource.cache
+D:\MatMagSoftware_git\01_Admin\02_Software\MatMag\MatMag\obj\Debug\MatMag.csproj.CoreCompileInputs.cache
+D:\MatMagSoftware_git\01_Admin\02_Software\MatMag\MatMag\obj\Debug\MatMag.exe
+D:\MatMagSoftware_git\01_Admin\02_Software\MatMag\MatMag\obj\Debug\MatMag.pdb
+D:\MatMagSoftware_git\01_Admin\02_Software\MatMag\MatMag\obj\Debug\MatMag.usOrder.resources
