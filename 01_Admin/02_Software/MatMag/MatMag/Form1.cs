@@ -38,7 +38,7 @@ namespace MatMag
             }
             else if(this.WindowState != FormWindowState.Minimized)
             {
-                spcMainScreen.SplitterDistance = 180;
+                spcMainScreen.SplitterDistance = 220;
                 cmdAddress.Text = "Adresse";
                 cmdArticle.Text = "Artikel";
                 cmdUser.Text = "Benutzer";
@@ -46,6 +46,11 @@ namespace MatMag
                 cmdOrder.Text = "Bestellungen";
                 cmdBox.Text = "Kisten";
             }
+
+        }
+
+        private void SpcMainScreen_Panel2_Paint(object sender, PaintEventArgs e)
+        {
 
         }
     }
