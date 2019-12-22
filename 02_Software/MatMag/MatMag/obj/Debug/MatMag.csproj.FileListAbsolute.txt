@@ -1,0 +1,15 @@
+C:\Users\marce\Documents\Git_repos\MatMagSoftware\02_Software\MatMag\MatMag\bin\Debug\MatMag.exe.config
+C:\Users\marce\Documents\Git_repos\MatMagSoftware\02_Software\MatMag\MatMag\bin\Debug\MatMag.exe
+C:\Users\marce\Documents\Git_repos\MatMagSoftware\02_Software\MatMag\MatMag\bin\Debug\MatMag.pdb
+C:\Users\marce\Documents\Git_repos\MatMagSoftware\02_Software\MatMag\MatMag\obj\Debug\MatMag.csprojAssemblyReference.cache
+C:\Users\marce\Documents\Git_repos\MatMagSoftware\02_Software\MatMag\MatMag\obj\Debug\MainWindow.g.cs
+C:\Users\marce\Documents\Git_repos\MatMagSoftware\02_Software\MatMag\MatMag\obj\Debug\App.g.cs
+C:\Users\marce\Documents\Git_repos\MatMagSoftware\02_Software\MatMag\MatMag\obj\Debug\MatMag_MarkupCompile.cache
+C:\Users\marce\Documents\Git_repos\MatMagSoftware\02_Software\MatMag\MatMag\obj\Debug\MatMag_MarkupCompile.lref
+C:\Users\marce\Documents\Git_repos\MatMagSoftware\02_Software\MatMag\MatMag\obj\Debug\MainWindow.baml
+C:\Users\marce\Documents\Git_repos\MatMagSoftware\02_Software\MatMag\MatMag\obj\Debug\MatMag.g.resources
+C:\Users\marce\Documents\Git_repos\MatMagSoftware\02_Software\MatMag\MatMag\obj\Debug\MatMag.Properties.Resources.resources
+C:\Users\marce\Documents\Git_repos\MatMagSoftware\02_Software\MatMag\MatMag\obj\Debug\MatMag.csproj.GenerateResource.cache
+C:\Users\marce\Documents\Git_repos\MatMagSoftware\02_Software\MatMag\MatMag\obj\Debug\MatMag.csproj.CoreCompileInputs.cache
+C:\Users\marce\Documents\Git_repos\MatMagSoftware\02_Software\MatMag\MatMag\obj\Debug\MatMag.exe
+C:\Users\marce\Documents\Git_repos\MatMagSoftware\02_Software\MatMag\MatMag\obj\Debug\MatMag.pdb
