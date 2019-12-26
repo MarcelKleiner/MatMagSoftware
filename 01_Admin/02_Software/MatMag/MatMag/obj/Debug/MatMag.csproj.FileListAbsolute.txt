@@ -26,3 +26,17 @@ D:\Git_Repos\MatMagSoftware\01_Admin\02_Software\MatMag\MatMag\bin\Debug\AxInter
 D:\Git_Repos\MatMagSoftware\01_Admin\02_Software\MatMag\MatMag\obj\Debug\Interop.AcroPDFLib.dll
 D:\Git_Repos\MatMagSoftware\01_Admin\02_Software\MatMag\MatMag\obj\Debug\AxInterop.AcroPDFLib.dll
 D:\Git_Repos\MatMagSoftware\01_Admin\02_Software\MatMag\MatMag\obj\Debug\MatMag.csproj.ResolveComReference.cache
+C:\Users\marce\Documents\Git_repos\MatMagSoftware\01_Admin\02_Software\MatMag\MatMag\bin\Debug\MatMag.exe.config
+C:\Users\marce\Documents\Git_repos\MatMagSoftware\01_Admin\02_Software\MatMag\MatMag\bin\Debug\MatMag.exe
+C:\Users\marce\Documents\Git_repos\MatMagSoftware\01_Admin\02_Software\MatMag\MatMag\obj\Debug\MatMag.csprojAssemblyReference.cache
+C:\Users\marce\Documents\Git_repos\MatMagSoftware\01_Admin\02_Software\MatMag\MatMag\obj\Debug\Interop.AcroPDFLib.dll
+C:\Users\marce\Documents\Git_repos\MatMagSoftware\01_Admin\02_Software\MatMag\MatMag\obj\Debug\AxInterop.AcroPDFLib.dll
+C:\Users\marce\Documents\Git_repos\MatMagSoftware\01_Admin\02_Software\MatMag\MatMag\obj\Debug\MatMag.csproj.ResolveComReference.cache
+C:\Users\marce\Documents\Git_repos\MatMagSoftware\01_Admin\02_Software\MatMag\MatMag\obj\Debug\MatMag.Form1.resources
+C:\Users\marce\Documents\Git_repos\MatMagSoftware\01_Admin\02_Software\MatMag\MatMag\obj\Debug\MatMag.Properties.Resources.resources
+C:\Users\marce\Documents\Git_repos\MatMagSoftware\01_Admin\02_Software\MatMag\MatMag\obj\Debug\MatMag.usOrder.resources
+C:\Users\marce\Documents\Git_repos\MatMagSoftware\01_Admin\02_Software\MatMag\MatMag\obj\Debug\MatMag.UserControls.usUser.resources
+C:\Users\marce\Documents\Git_repos\MatMagSoftware\01_Admin\02_Software\MatMag\MatMag\obj\Debug\MatMag.csproj.GenerateResource.cache
+C:\Users\marce\Documents\Git_repos\MatMagSoftware\01_Admin\02_Software\MatMag\MatMag\obj\Debug\MatMag.csproj.CoreCompileInputs.cache
+C:\Users\marce\Documents\Git_repos\MatMagSoftware\01_Admin\02_Software\MatMag\MatMag\obj\Debug\MatMag.exe
+C:\Users\marce\Documents\Git_repos\MatMagSoftware\01_Admin\02_Software\MatMag\MatMag\obj\Debug\MatMag.pdb

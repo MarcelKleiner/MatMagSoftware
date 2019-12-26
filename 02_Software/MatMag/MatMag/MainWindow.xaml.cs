@@ -26,7 +26,6 @@ namespace MatMag
             InitializeComponent();
             new MainFrameControl(this);
             new CardControl(this);
-    
         }
 
 

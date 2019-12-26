@@ -55,6 +55,20 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="DateTimePicker.xaml.cs">
+      <DependentUpon>DateTimePicker.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ucListView.xaml.cs">
+      <DependentUpon>ucListView.xaml</DependentUpon>
+    </Compile>
+    <Page Include="cardOrder.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DateTimePicker.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -63,12 +77,19 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="cardOrder.xaml.cs">
+      <DependentUpon>cardOrder.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Klassen\CardControl.cs" />
     <Compile Include="Klassen\MainFrameControl.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="ucListView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -96,7 +117,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <PackageReference Include="MahApps.Metro">
+      <Version>1.6.5</Version>
+    </PackageReference>
+  </ItemGroup>
   <ItemGroup>
     <Resource Include="Icon\Address Book_64px.png" />
     <Resource Include="Icon\Bill_64px.png" />
@@ -115,6 +140,15 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Icon\Search_64px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icon\Minus_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icon\Plus_64px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icon\Minus_64px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

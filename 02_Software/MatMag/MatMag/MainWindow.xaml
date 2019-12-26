@@ -4,8 +4,10 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MatMag"
+        xmlns:metro="http://metro.mahapps.com/winfx/xaml/controls"
         mc:Ignorable="d"
         Title="MainWindow" Height="550" Width="800" MinHeight="550" MinWidth="500" WindowStyle="None">
+        
     <Grid x:Name="gridMain" Background="#FFF5F3F3">
         <Grid.RowDefinitions>
             <RowDefinition Height="40"/>
@@ -17,7 +19,7 @@
             <ColumnDefinition/>
             <ColumnDefinition Width="120"/>
         </Grid.ColumnDefinitions>
-        <Grid Margin="0" Grid.Row="1" Background="#FF0A4C72" Grid.ColumnSpan="2">
+        <Grid Margin="0" Grid.Row="1" Background="#FF0A4C72" Grid.ColumnSpan="2" Width="201">
             <Grid.RowDefinitions>
                 <RowDefinition Height="50"/>
                 <RowDefinition Height="50"/>
@@ -39,7 +41,7 @@
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
                 <Image x:Name="image" Margin="5" Source="Icon/Order_64p.png"/>
-                <Label x:Name="label1" Content="Bestellungen" Grid.Column="1" Margin="0" Background="{x:Null}" Foreground="White" FontSize="15" VerticalAlignment="Center"/>
+                <Label x:Name="lblOrder" Content="Bestellungen" Grid.Column="1" Margin="0" Background="{x:Null}" Foreground="White" FontSize="15" VerticalAlignment="Center"/>
             </Grid>
             <Grid x:Name="cmdArticle" Margin="10,5,0,5" Grid.Row="1">
                 <Grid.ColumnDefinitions>
@@ -47,7 +49,7 @@
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
                 <Image x:Name="image1" Margin="5" Source="icon/List_64px.png"/>
-                <Label x:Name="label2" Content="Artikel" Grid.Column="1" Margin="0" Background="{x:Null}" Foreground="White" FontSize="15" VerticalAlignment="Center"/>
+                <Label x:Name="lblArticle" Content="Artikel" Grid.Column="1" Margin="0" Background="{x:Null}" Foreground="White" FontSize="15" VerticalAlignment="Center"/>
             </Grid>
             <Grid x:Name="cmdBoxes" Margin="10,5,0,5" Grid.Row="2">
                 <Grid.ColumnDefinitions>
@@ -55,7 +57,7 @@
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
                 <Image x:Name="image3" Margin="5" Source="Icon/Box_64px.png"/>
-                <Label x:Name="label4" Content="Kisten" Grid.Column="1" Margin="0" Background="{x:Null}" Foreground="White" FontSize="15" VerticalAlignment="Center"/>
+                <Label x:Name="lblBox" Content="Kisten" Grid.Column="1" Margin="0" Background="{x:Null}" Foreground="White" FontSize="15" VerticalAlignment="Center"/>
             </Grid>
             <Grid x:Name="cmdAddress" Margin="10,5,0,5" Grid.Row="3">
                 <Grid.ColumnDefinitions>
@@ -63,7 +65,7 @@
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
                 <Image x:Name="image4" Margin="5" Source="icon/Address Book_64px.png"/>
-                <Label x:Name="label5" Content="Adressen" Grid.Column="1" Margin="0" Background="{x:Null}" Foreground="White" FontSize="15" VerticalAlignment="Center"/>
+                <Label x:Name="lblAddress" Content="Adressen" Grid.Column="1" Margin="0" Background="{x:Null}" Foreground="White" FontSize="15" VerticalAlignment="Center"/>
             </Grid>
             <Grid x:Name="cmdBill" Margin="10,5,0,5" Grid.Row="4">
                 <Grid.ColumnDefinitions>
@@ -71,7 +73,7 @@
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
                 <Image x:Name="image5" Margin="5" Source="icon/Bill_64px.png"/>
-                <Label x:Name="label6" Content="Rechnungen" Grid.Column="1" Margin="0" Background="{x:Null}" Foreground="White" FontSize="15" VerticalAlignment="Center"/>
+                <Label x:Name="lblBill" Content="Rechnungen" Grid.Column="1" Margin="0" Background="{x:Null}" Foreground="White" FontSize="15" VerticalAlignment="Center"/>
             </Grid>
             <Grid x:Name="cmdHelp" Margin="10,5,0,5" Grid.Row="6">
                 <Grid.ColumnDefinitions>
@@ -79,7 +81,7 @@
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
                 <Image x:Name="image2" Margin="5" Source="Icon/Help_64px.png"/>
-                <Label x:Name="label3" Content="Hilfe" Grid.Column="1" Margin="0" Background="{x:Null}" Foreground="White" FontSize="15" VerticalAlignment="Center"/>
+                <Label x:Name="lblHelp" Content="Hilfe" Grid.Column="1" Margin="0" Background="{x:Null}" Foreground="White" FontSize="15" VerticalAlignment="Center"/>
             </Grid>
             <Grid x:Name="cmdUser" Margin="10,5,0,5" Grid.Row="7">
                 <Grid.ColumnDefinitions>
@@ -87,7 +89,7 @@
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
                 <Image x:Name="image6" Margin="5" Source="Icon/User_64px.png"/>
-                <Label x:Name="label7" Content="Benutzer" Grid.Column="1" Margin="0" Background="{x:Null}" Foreground="White" FontSize="15" VerticalAlignment="Center"/>
+                <Label x:Name="lblUser" Content="Benutzer" Grid.Column="1" Margin="0" Background="{x:Null}" Foreground="White" FontSize="15" VerticalAlignment="Center"/>
             </Grid>
             <Grid x:Name="cmdSettings" Margin="10,5,0,5" Grid.Row="8">
                 <Grid.ColumnDefinitions>
@@ -95,7 +97,7 @@
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
                 <Image x:Name="image7" Margin="5" Source="Icon/Settings_64px.png"/>
-                <Label x:Name="label8" Content="Einstellungen" Grid.Column="1" Margin="0" Background="{x:Null}" Foreground="White" FontSize="15" VerticalAlignment="Center"/>
+                <Label x:Name="lblSettings" Content="Einstellungen" Grid.Column="1" Margin="0" Background="{x:Null}" Foreground="White" FontSize="15" VerticalAlignment="Center"/>
             </Grid>
         </Grid>
         <Grid x:Name="gridTop" Background="White" Grid.ColumnSpan="3" Margin="0">
@@ -126,6 +128,16 @@
             </Grid>
         </Grid>
         <Image x:Name="cmdSearch" Margin="10" Source="Icon/Search_64px.png"/>
+        <Grid x:Name="gridMainCard" Grid.ColumnSpan="2" Grid.Column="2" Margin="0" Grid.Row="1" Background="#FFE4E4E4">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition Height="50"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <local:cardOrder Margin="0" Width="Auto" Height="Auto"/>
+        </Grid>
 
     </Grid>
 </Window>
