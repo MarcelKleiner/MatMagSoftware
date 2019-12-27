@@ -1,17 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Globalization;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
+
 
 namespace MatMag
 {
@@ -26,18 +19,15 @@ namespace MatMag
         private List<Label> hourLblList = new List<Label>();
         private List<Label> minuteLblList = new List<Label>();
 
-        private DateTime selectedDate;// = new DateTime();
-
-        private int selectedTimeHour;
-        private int selectedTimeMinute;
-        private int selectedDateDay;
-        private int selectedDateMonth;
-        private int selectedDateYear;
+        private String selectedDate;
+        private String selectedTime;
 
         public DateTimePicker()
         {
             InitializeComponent();
+            //Akutelles Datum ermitteln
             actualTimeHour = DateTime.Now.Hour;
+            //aktuelle minute auf 5minuten Runden
             actualTimeMinute = Convert.ToInt32(Math.Round(((double)DateTime.Now.Minute / 5), 0) * 5);
 
             //Stunden Label in liste eintragen und initialisieren
@@ -59,7 +49,9 @@ namespace MatMag
             minuteLblList.Add(lblMin5);
             minuteLblList.Add(lblMin6);
             minuteChange(actualTimeMinute);
-            
+
+            selectedDate = DateTime.Now.ToString("dd.MM.yyyy");
+
         }
 
         /// <summary>
@@ -290,25 +282,37 @@ namespace MatMag
         //Fenster Steuerung OK/Abbrechen
         private void CmdCancle_Click(object sender, RoutedEventArgs e)
         {
+            this.DialogResult = false;
             this.Close();
         }
 
         private void CmdOK_Click(object sender, RoutedEventArgs e)
         {
+            this.DialogResult = true;
             this.Close();
         }
 
-  
+        /// <summary>
+        /// Dialog Antwort (datum + zeit)
+        /// </summary>
+        public string Answert
+        {
+              get{ return selectedDate + "/" + lblTime.Content; }
+        }
 
+  
+        /// <summary>
+        /// Gewähltes Datum in Lable Speichern
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Calendar_SelectedDatesChanged(object sender, SelectionChangedEventArgs e)
         {
-            selectedDate = calendar.SelectedDate.Value;
-            selectedDateDay = selectedDate.Day;
-            selectedDateMonth = selectedDate.Month;
-            selectedDateYear = selectedDate.Year;
-
-            lblDate.Content = selectedDateDay + " " + CultureInfo.CurrentCulture.DateTimeFormat.GetMonthName(selectedDateMonth) + " " + selectedDateYear;
-
+            this.selectedDate = (calendar.SelectedDate.Value).ToString("dd.MM.yyyy"); ;
+            lblDate.Content = 
+                calendar.SelectedDate.Value.Day + 
+                " " +  CultureInfo.CurrentCulture.DateTimeFormat.GetMonthName(calendar.SelectedDate.Value.Month) + 
+                " " + calendar.SelectedDate.Value.Year;
         }
     }
 }

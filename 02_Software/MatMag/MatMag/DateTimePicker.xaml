@@ -7,11 +7,12 @@
         xmlns:local="clr-namespace:MatMag"
         xmlns:controlzex="urn:controlzex" x:Class="MatMag.DateTimePicker"
         mc:Ignorable="d"
-        Title="DateTimePicker" Height="477.275" Width="740" WindowStyle="None" AllowsTransparency="True">
+        Title="DateTimePicker" Height="477.275" Width="740" WindowStyle="None" AllowsTransparency="True" Background="White">
 
     <Window.Resources>
 
     </Window.Resources>
+
     <Grid Margin="0">
 
         <Grid.RowDefinitions>
@@ -94,5 +95,6 @@
             <Rectangle Grid.ColumnSpan="3" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="1" Margin="0,103,0,0" Stroke="Black" VerticalAlignment="Top" Width="215" Grid.Column="1"/>
             <Rectangle Grid.ColumnSpan="3" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="1" Margin="0,138,0,0" Stroke="Black" VerticalAlignment="Top" Width="215" Grid.Column="1"/>
         </Grid>
+        <Rectangle Margin="0" Stroke="#FF0A4C72" Grid.ColumnSpan="2" Grid.RowSpan="3"/>
     </Grid>
 </Window>
