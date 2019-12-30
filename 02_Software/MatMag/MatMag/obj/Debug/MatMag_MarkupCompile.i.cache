@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\marce\Documents\Git_repos\MatMagSoftware\02_Software\MatMag\MatMag\App.xaml
-4-174929768
+5-1872845553
 
-11-1470029530
+151484471159
 16206272433
-cardOrder.xaml;DateTimePicker.xaml;MainWindow.xaml;ucListView.xaml;
+Cards\cardAddress.xaml;Cards\cardOrder.xaml;DateTimePicker.xaml;MainWindow.xaml;ucListView.xaml;
 
-False
+True
 

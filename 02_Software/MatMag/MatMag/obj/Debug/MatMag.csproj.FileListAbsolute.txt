@@ -13,9 +13,6 @@ C:\Users\marce\Documents\Git_repos\MatMagSoftware\02_Software\MatMag\MatMag\obj\
 C:\Users\marce\Documents\Git_repos\MatMagSoftware\02_Software\MatMag\MatMag\obj\Debug\MatMag.csproj.CoreCompileInputs.cache
 C:\Users\marce\Documents\Git_repos\MatMagSoftware\02_Software\MatMag\MatMag\obj\Debug\MatMag.exe
 C:\Users\marce\Documents\Git_repos\MatMagSoftware\02_Software\MatMag\MatMag\obj\Debug\MatMag.pdb
-C:\Users\marce\Documents\Git_repos\MatMagSoftware\02_Software\MatMag\MatMag\obj\Debug\cardOrder.g.cs
-C:\Users\marce\Documents\Git_repos\MatMagSoftware\02_Software\MatMag\MatMag\obj\Debug\cardOrder.baml
-C:\Users\marce\Documents\Git_repos\MatMagSoftware\02_Software\MatMag\MatMag\obj\Debug\GeneratedInternalTypeHelper.g.cs
 C:\Users\marce\Documents\Git_repos\MatMagSoftware\02_Software\MatMag\MatMag\bin\Debug\ControlzEx.dll
 C:\Users\marce\Documents\Git_repos\MatMagSoftware\02_Software\MatMag\MatMag\bin\Debug\ControlzEx.pdb
 C:\Users\marce\Documents\Git_repos\MatMagSoftware\02_Software\MatMag\MatMag\bin\Debug\System.Windows.Interactivity.dll
@@ -27,3 +24,7 @@ C:\Users\marce\Documents\Git_repos\MatMagSoftware\02_Software\MatMag\MatMag\obj\
 C:\Users\marce\Documents\Git_repos\MatMagSoftware\02_Software\MatMag\MatMag\obj\Debug\ucListView.baml
 C:\Users\marce\Documents\Git_repos\MatMagSoftware\02_Software\MatMag\MatMag\obj\Debug\DateTimePicker.g.cs
 C:\Users\marce\Documents\Git_repos\MatMagSoftware\02_Software\MatMag\MatMag\obj\Debug\DateTimePicker.baml
+C:\Users\marce\Documents\Git_repos\MatMagSoftware\02_Software\MatMag\MatMag\obj\Debug\Cards\cardOrder.g.cs
+C:\Users\marce\Documents\Git_repos\MatMagSoftware\02_Software\MatMag\MatMag\obj\Debug\Cards\cardOrder.baml
+C:\Users\marce\Documents\Git_repos\MatMagSoftware\02_Software\MatMag\MatMag\obj\Debug\Cards\cardAddress.g.cs
+C:\Users\marce\Documents\Git_repos\MatMagSoftware\02_Software\MatMag\MatMag\obj\Debug\Cards\cardAddress.baml

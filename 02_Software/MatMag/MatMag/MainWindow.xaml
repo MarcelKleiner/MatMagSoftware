@@ -7,7 +7,7 @@
         xmlns:metro="http://metro.mahapps.com/winfx/xaml/controls"
         mc:Ignorable="d"
         Title="MainWindow" Height="550" Width="800" MinHeight="550" MinWidth="500" WindowStyle="None">
-        
+
     <Grid x:Name="gridMain" Background="#FFF5F3F3">
         <Grid.RowDefinitions>
             <RowDefinition Height="40"/>
@@ -136,7 +136,32 @@
             <Grid.ColumnDefinitions>
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
-            <local:cardOrder Margin="0" Width="Auto" Height="Auto"/>
+            <TabControl x:Name="tabControl" Margin="0,0,0,0" Grid.RowSpan="2" Padding="0" BorderBrush="White" BorderThickness="0">
+                <TabItem Header="TabItem" Height="0" Visibility="Hidden">
+                    <Grid x:Name="tabOrder" Background="#FFFFFF"/>
+                </TabItem>
+                <TabItem Header="TabItem" Height="0" Visibility="Hidden">
+                    <Grid x:Name="tabArticle" Background="#FFFFFF"/>
+                </TabItem>
+                <TabItem Header="TabItem" Height="0" Visibility="Hidden">
+                    <Grid x:Name="tabBox" Background="#FFFFFF"/>
+                </TabItem>
+                <TabItem Header="TabItem" Height="0" Visibility="Hidden">
+                    <Grid x:Name="tabAddress" Background="#FFFFFF"/>
+                </TabItem>
+                <TabItem Header="TabItem" Height="0" Visibility="Hidden">
+                    <Grid x:Name="tabBil" Background="#FFFFFF"/>
+                </TabItem>
+                <TabItem Header="TabItem" Height="0" Visibility="Hidden">
+                    <Grid x:Name="tabHelp" Background="#FFFFFF"/>
+                </TabItem>
+                <TabItem Header="TabItem" Height="0" Visibility="Hidden">
+                    <Grid x:Name="tabUser" Background="#FFFFFF"/>
+                </TabItem>
+                <TabItem Header="TabItem" Height="0" Visibility="Hidden">
+                    <Grid x:Name="tabSettings" Background="#FFFFFF"/>
+                </TabItem>
+            </TabControl>
         </Grid>
 
     </Grid>

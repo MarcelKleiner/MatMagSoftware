@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using MatMag.Cards;
+using System;
 using System.Windows;
 using System.Windows.Input;
 using System.Windows.Media;
@@ -11,60 +8,83 @@ namespace MatMag.Klassen
 {
     class CardControl
     {
-        private MainWindow mainWindow;
+        private readonly MainWindow mainWindow;
+
+        private CardOrder cardOrder;
+        private CardAddress cardAddress;
+
+
+
 
         private readonly Brush darkBlue = new SolidColorBrush(Color.FromRgb(16,24,106));
         private readonly Brush lightBlue = new SolidColorBrush(Color.FromRgb(99, 160, 222));
         private readonly Brush lightBlue1 = new SolidColorBrush(Color.FromRgb(47, 122, 196));
 
-        private bool[] cmdClicked = new bool[10];
+        private readonly  bool[] cmdClicked = new bool[10];
 
         public CardControl(MainWindow mainWindow)
         {
             this.mainWindow = mainWindow;
-            addEventHandler();
+            AddEventHandler();
+            AddCartControl();
         }
 
 
-        private void addEventHandler()
+        private void AddCartControl()
         {
-            mainWindow.cmdOrder.MouseEnter += new MouseEventHandler(this.cmdOrder_MouseEnter);
-            mainWindow.cmdOrder.MouseLeave += new MouseEventHandler(this.cmdOrder_MouseLeave);
-            mainWindow.cmdOrder.MouseLeftButtonUp += new MouseButtonEventHandler(this.cmdOrder_MouseUp);
+            cardOrder = new CardOrder();
+            cardAddress = new CardAddress();
 
-            mainWindow.cmdArticle.MouseEnter += new MouseEventHandler(this.cmdArticle_MouseEnter);
-            mainWindow.cmdArticle.MouseLeave += new MouseEventHandler(this.cmdArticle_MouseLeave);
-            mainWindow.cmdArticle.MouseLeftButtonUp += new MouseButtonEventHandler(this.cmdArticle_MouseUp);
+            cardOrder.Height = Double.NaN;
+            cardOrder.Width = Double.NaN;
 
-            mainWindow.cmdBoxes.MouseEnter += new MouseEventHandler(this.cmdBoxes_MouseEnter);
-            mainWindow.cmdBoxes.MouseLeave += new MouseEventHandler(this.cmdBoxes_MouseLeave);
-            mainWindow.cmdBoxes.MouseLeftButtonUp += new MouseButtonEventHandler(this.cmdBoxes_MouseUp);
-
-            mainWindow.cmdAddress.MouseEnter += new MouseEventHandler(this.cmdAddress_MouseEnter);
-            mainWindow.cmdAddress.MouseLeave += new MouseEventHandler(this.cmdAddress_MouseLeave);
-            mainWindow.cmdAddress.MouseLeftButtonUp += new MouseButtonEventHandler(this.cmdAddress_MouseUp);
-
-            mainWindow.cmdBill.MouseEnter += new MouseEventHandler(this.cmdBill_MouseEnter);
-            mainWindow.cmdBill.MouseLeave += new MouseEventHandler(this.cmdBill_MouseLeave);
-            mainWindow.cmdBill.MouseLeftButtonUp += new MouseButtonEventHandler(this.cmdBill_MouseUp);
-
-            mainWindow.cmdHelp.MouseEnter += new MouseEventHandler(this.cmdHelp_MouseEnter);
-            mainWindow.cmdHelp.MouseLeave += new MouseEventHandler(this.cmdHelp_MouseLeave);
-            mainWindow.cmdHelp.MouseLeftButtonUp += new MouseButtonEventHandler(this.cmdHelp_MouseUp);
-
-            mainWindow.cmdUser.MouseEnter += new MouseEventHandler(this.cmdUser_MouseEnter);
-            mainWindow.cmdUser.MouseLeave += new MouseEventHandler(this.cmdUser_MouseLeave);
-            mainWindow.cmdUser.MouseLeftButtonUp += new MouseButtonEventHandler(this.cmdUser_MouseUp);
-
-            mainWindow.cmdSettings.MouseEnter += new MouseEventHandler(this.cmdSettings_MouseEnter);
-            mainWindow.cmdSettings.MouseLeave += new MouseEventHandler(this.cmdSettings_MouseLeave);
-            mainWindow.cmdSettings.MouseLeftButtonUp += new MouseButtonEventHandler(this.cmdSettings_MouseUp);
-
-            mainWindow.SizeChanged += new SizeChangedEventHandler(this.mainWindow_SizeChanged);
+            cardAddress.Height = Double.NaN;
+            cardAddress.Width = Double.NaN;
+            
+            mainWindow.tabOrder.Children.Add(cardOrder);
+            mainWindow.tabAddress.Children.Add(cardAddress);
         }
 
 
-        private void resetCommand()
+        private void AddEventHandler()
+        {
+            mainWindow.cmdOrder.MouseEnter += new MouseEventHandler(this.CmdOrder_MouseEnter);
+            mainWindow.cmdOrder.MouseLeave += new MouseEventHandler(this.CmdOrder_MouseLeave);
+            mainWindow.cmdOrder.MouseLeftButtonUp += new MouseButtonEventHandler(this.CmdOrder_MouseUp);
+
+            mainWindow.cmdArticle.MouseEnter += new MouseEventHandler(this.CmdArticle_MouseEnter);
+            mainWindow.cmdArticle.MouseLeave += new MouseEventHandler(this.CmdArticle_MouseLeave);
+            mainWindow.cmdArticle.MouseLeftButtonUp += new MouseButtonEventHandler(this.CmdArticle_MouseUp);
+
+            mainWindow.cmdBoxes.MouseEnter += new MouseEventHandler(this.CmdBoxes_MouseEnter);
+            mainWindow.cmdBoxes.MouseLeave += new MouseEventHandler(this.CmdBoxes_MouseLeave);
+            mainWindow.cmdBoxes.MouseLeftButtonUp += new MouseButtonEventHandler(this.CmdBoxes_MouseUp);
+
+            mainWindow.cmdAddress.MouseEnter += new MouseEventHandler(this.CmdAddress_MouseEnter);
+            mainWindow.cmdAddress.MouseLeave += new MouseEventHandler(this.CmdAddress_MouseLeave);
+            mainWindow.cmdAddress.MouseLeftButtonUp += new MouseButtonEventHandler(this.CmdAddress_MouseUp);
+
+            mainWindow.cmdBill.MouseEnter += new MouseEventHandler(this.CmdBill_MouseEnter);
+            mainWindow.cmdBill.MouseLeave += new MouseEventHandler(this.CmdBill_MouseLeave);
+            mainWindow.cmdBill.MouseLeftButtonUp += new MouseButtonEventHandler(this.CmdBill_MouseUp);
+
+            mainWindow.cmdHelp.MouseEnter += new MouseEventHandler(this.CmdHelp_MouseEnter);
+            mainWindow.cmdHelp.MouseLeave += new MouseEventHandler(this.CmdHelp_MouseLeave);
+            mainWindow.cmdHelp.MouseLeftButtonUp += new MouseButtonEventHandler(this.CmdHelp_MouseUp);
+
+            mainWindow.cmdUser.MouseEnter += new MouseEventHandler(this.CmdUser_MouseEnter);
+            mainWindow.cmdUser.MouseLeave += new MouseEventHandler(this.CmdUser_MouseLeave);
+            mainWindow.cmdUser.MouseLeftButtonUp += new MouseButtonEventHandler(this.CmdUser_MouseUp);
+
+            mainWindow.cmdSettings.MouseEnter += new MouseEventHandler(this.CmdSettings_MouseEnter);
+            mainWindow.cmdSettings.MouseLeave += new MouseEventHandler(this.CmdSettings_MouseLeave);
+            mainWindow.cmdSettings.MouseLeftButtonUp += new MouseButtonEventHandler(this.CmdSettings_MouseUp);
+
+            mainWindow.SizeChanged += new SizeChangedEventHandler(this.MainWindow_SizeChanged);
+        }
+
+
+        private void ResetCommand()
         {
             mainWindow.cmdOrder.Background = Brushes.Transparent;
             mainWindow.cmdArticle.Background = Brushes.Transparent;
@@ -85,167 +105,175 @@ namespace MatMag.Klassen
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void cmdOrder_MouseEnter(object sender, MouseEventArgs e)
+        private void CmdOrder_MouseEnter(object sender, MouseEventArgs e)
         {
             if (!cmdClicked[1])
             {
                 mainWindow.cmdOrder.Background = darkBlue;
             }
         }
-        private void cmdOrder_MouseLeave(object sender, MouseEventArgs e)
+        private void CmdOrder_MouseLeave(object sender, MouseEventArgs e)
         {
             if (!cmdClicked[1])
             {
                 mainWindow.cmdOrder.Background = Brushes.Transparent;
             }   
         }
-        private void cmdOrder_MouseUp(object sender, MouseButtonEventArgs e)
+        private void CmdOrder_MouseUp(object sender, MouseButtonEventArgs e)
         {
-            resetCommand();
+            ResetCommand();
             mainWindow.cmdOrder.Background = lightBlue1;
             cmdClicked[1] = true;
+            mainWindow.tabControl.SelectedIndex = 0;
             //ToDo
         }
 
 
-        private void cmdArticle_MouseEnter(object sender, MouseEventArgs e)
+        private void CmdArticle_MouseEnter(object sender, MouseEventArgs e)
         {
             if (!cmdClicked[2])
             {
                 mainWindow.cmdArticle.Background = darkBlue;
             }
         }
-        private void cmdArticle_MouseLeave(object sender, MouseEventArgs e)
+        private void CmdArticle_MouseLeave(object sender, MouseEventArgs e)
         {
             if (!cmdClicked[2])
             {
                 mainWindow.cmdArticle.Background = Brushes.Transparent;
             }
         }
-        private void cmdArticle_MouseUp(object sender, MouseButtonEventArgs e)
+        private void CmdArticle_MouseUp(object sender, MouseButtonEventArgs e)
         {
-            resetCommand();
+            ResetCommand();
             mainWindow.cmdArticle.Background = lightBlue;
             cmdClicked[2] = true;
+            mainWindow.tabControl.SelectedIndex = 1;
         }
 
 
 
-        private void cmdBoxes_MouseEnter(object sender, MouseEventArgs e)
+        private void CmdBoxes_MouseEnter(object sender, MouseEventArgs e)
         {
             if (!cmdClicked[3])
                 mainWindow.cmdBoxes.Background = darkBlue;
         }
-        private void cmdBoxes_MouseLeave(object sender, MouseEventArgs e)
+        private void CmdBoxes_MouseLeave(object sender, MouseEventArgs e)
         {
             if (!cmdClicked[3])
                 mainWindow.cmdBoxes.Background = Brushes.Transparent;
         }
-        private void cmdBoxes_MouseUp(object sender, MouseButtonEventArgs e)
+        private void CmdBoxes_MouseUp(object sender, MouseButtonEventArgs e)
         {
-            resetCommand();
+            ResetCommand();
             mainWindow.cmdBoxes.Background = lightBlue;
             cmdClicked[3] = true;
+            mainWindow.tabControl.SelectedIndex = 2;
         }
 
 
 
-        private void cmdAddress_MouseEnter(object sender, MouseEventArgs e)
+        private void CmdAddress_MouseEnter(object sender, MouseEventArgs e)
         {
             if (!cmdClicked[4])
                 mainWindow.cmdAddress.Background = darkBlue;
         }
-        private void cmdAddress_MouseLeave(object sender, MouseEventArgs e)
+        private void CmdAddress_MouseLeave(object sender, MouseEventArgs e)
         {
             if (!cmdClicked[4])
                 mainWindow.cmdAddress.Background = Brushes.Transparent;
         }
-        private void cmdAddress_MouseUp(object sender, MouseButtonEventArgs e)
+        private void CmdAddress_MouseUp(object sender, MouseButtonEventArgs e)
         {
-            resetCommand();
+            ResetCommand();
             mainWindow.cmdAddress.Background = lightBlue;
             cmdClicked[4] = true;
+            mainWindow.tabControl.SelectedIndex = 3;
         }
 
 
 
-        private void cmdBill_MouseEnter(object sender, MouseEventArgs e)
+        private void CmdBill_MouseEnter(object sender, MouseEventArgs e)
         {
             if (!cmdClicked[5])
                 mainWindow.cmdBill.Background = darkBlue;
         }
-        private void cmdBill_MouseLeave(object sender, MouseEventArgs e)
+        private void CmdBill_MouseLeave(object sender, MouseEventArgs e)
         {
             if (!cmdClicked[5])
                 mainWindow.cmdBill.Background = Brushes.Transparent;
         }
-        private void cmdBill_MouseUp(object sender, MouseButtonEventArgs e)
+        private void CmdBill_MouseUp(object sender, MouseButtonEventArgs e)
         {
-            resetCommand();
+            ResetCommand();
             mainWindow.cmdBill.Background = lightBlue;
             cmdClicked[5] = true;
+            mainWindow.tabControl.SelectedIndex = 4;
         }
 
 
 
-        private void cmdHelp_MouseEnter(object sender, MouseEventArgs e)
+        private void CmdHelp_MouseEnter(object sender, MouseEventArgs e)
         {
             if (!cmdClicked[6])
                 mainWindow.cmdHelp.Background = darkBlue;
         }
-        private void cmdHelp_MouseLeave(object sender, MouseEventArgs e)
+        private void CmdHelp_MouseLeave(object sender, MouseEventArgs e)
         {
             if (!cmdClicked[6])
                 mainWindow.cmdHelp.Background = Brushes.Transparent;
         }
-        private void cmdHelp_MouseUp(object sender, MouseButtonEventArgs e)
+        private void CmdHelp_MouseUp(object sender, MouseButtonEventArgs e)
         {
-            resetCommand();
+            ResetCommand();
             mainWindow.cmdHelp.Background = lightBlue;
             cmdClicked[6] = true;
+            mainWindow.tabControl.SelectedIndex = 5;
         }
 
 
 
-        private void cmdUser_MouseEnter(object sender, MouseEventArgs e)
+        private void CmdUser_MouseEnter(object sender, MouseEventArgs e)
         {
             if (!cmdClicked[7])
                 mainWindow.cmdUser.Background = darkBlue;
         }
-        private void cmdUser_MouseLeave(object sender, MouseEventArgs e)
+        private void CmdUser_MouseLeave(object sender, MouseEventArgs e)
         {
             if (!cmdClicked[7])
                 mainWindow.cmdUser.Background = Brushes.Transparent;
         }
-        private void cmdUser_MouseUp(object sender, MouseButtonEventArgs e)
+        private void CmdUser_MouseUp(object sender, MouseButtonEventArgs e)
         {
-            resetCommand();
+            ResetCommand();
             mainWindow.cmdUser.Background = lightBlue;
             cmdClicked[7] = true;
+            mainWindow.tabControl.SelectedIndex = 6;
         }
 
 
 
-        private void cmdSettings_MouseEnter(object sender, MouseEventArgs e)
+        private void CmdSettings_MouseEnter(object sender, MouseEventArgs e)
         {
             if (!cmdClicked[8])
                 mainWindow.cmdSettings.Background = darkBlue;
         }
-        private void cmdSettings_MouseLeave(object sender, MouseEventArgs e)
+        private void CmdSettings_MouseLeave(object sender, MouseEventArgs e)
         {
             if (!cmdClicked[8])
                 mainWindow.cmdSettings.Background = Brushes.Transparent;
         }
-        private void cmdSettings_MouseUp(object sender, MouseButtonEventArgs e)
+        private void CmdSettings_MouseUp(object sender, MouseButtonEventArgs e)
         {
-            resetCommand();
+            ResetCommand();
             mainWindow.cmdSettings.Background = lightBlue;
             cmdClicked[8] = true;
+            mainWindow.tabControl.SelectedIndex = 7;
         }
 
 
 
-        private void mainWindow_SizeChanged(object sender, SizeChangedEventArgs e)
+        private void MainWindow_SizeChanged(object sender, SizeChangedEventArgs e)
         {
             if(mainWindow.Width < 1000)
             {

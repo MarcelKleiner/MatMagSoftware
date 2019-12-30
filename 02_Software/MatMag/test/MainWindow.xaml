@@ -256,7 +256,5 @@
             <Border x:Name="PART_ContentHost" Focusable="False" Background="{TemplateBinding Background}" />
         </ControlTemplate>
     </Window.Resources>
-    <Viewbox Margin="246,20,175,59">
-        <Calendar Margin="0" RenderTransformOrigin="0.481,0.719"/>
-    </Viewbox>
+    <Grid x:Name="MainGrid" Margin="0"/>
 </Window>
