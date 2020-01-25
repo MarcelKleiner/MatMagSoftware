@@ -1,4 +1,5 @@
 ﻿using MahApps.Metro.Controls;
+using MatMag.Klassen;
 using System;
 using System.Collections.Generic;
 using System.Globalization;
@@ -34,7 +35,8 @@ namespace MatMag
         public cardOrder()
         {
             InitializeComponent();
-         
+
+            new OrderDataGridControl(this);
         }
 
         private void DataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)

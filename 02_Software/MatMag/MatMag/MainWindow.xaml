@@ -7,7 +7,7 @@
         xmlns:metro="http://metro.mahapps.com/winfx/xaml/controls"
         mc:Ignorable="d"
         Title="MainWindow" Height="550" Width="800" MinHeight="550" MinWidth="500" WindowStyle="None">
-        
+
     <Grid x:Name="gridMain" Background="#FFF5F3F3">
         <Grid.RowDefinitions>
             <RowDefinition Height="40"/>
@@ -128,16 +128,33 @@
             </Grid>
         </Grid>
         <Image x:Name="cmdSearch" Margin="10" Source="Icon/Search_64px.png"/>
-        <Grid x:Name="gridMainCard" Grid.ColumnSpan="2" Grid.Column="2" Margin="0" Grid.Row="1" Background="#FFE4E4E4">
-            <Grid.RowDefinitions>
-                <RowDefinition/>
-                <RowDefinition Height="50"/>
-            </Grid.RowDefinitions>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition/>
-            </Grid.ColumnDefinitions>
-            <local:cardOrder Margin="0" Width="Auto" Height="Auto"/>
-        </Grid>
+        <TabControl x:Name="tabControl" Grid.Column="2" Margin="0,-3,0,0" Grid.Row="1" Grid.ColumnSpan="2" Padding="0" Background="White">
+            <TabItem Header="cardOrder" Visibility="Hidden" Height="0">
+                <Grid x:Name="tabControlGridOrder"/>
+            </TabItem>
+            <TabItem Header="cardArticle" Visibility="Hidden" Height="0">
+                <Grid x:Name="tabControlGridArticle"/>
+            </TabItem>
+            <TabItem Header="cardBox" Visibility="Hidden" Height="0">
+                <Grid x:Name="tabControlGridBox"/>
+            </TabItem>
+            <TabItem Header="cardAddress" Visibility="Hidden" Height="0">
+                <Grid x:Name="tabControlGridAddress"/>
+            </TabItem>
+            <TabItem Header="cardBill" Visibility="Hidden" Height="0">
+                <Grid x:Name="tabControlGridBill"/>
+            </TabItem>
+            <TabItem Header="cardHelp" Visibility="Hidden" Height="0">
+                <Grid x:Name="tabControlGridHelp"/>
+            </TabItem>
+            <TabItem Header="cardUser" Visibility="Hidden" Height="0">
+                <Grid  x:Name="tabControlGridUser"/>
+            </TabItem>
+            <TabItem Header="cardSettings" Visibility="Hidden" Height="0">
+                <Grid x:Name="tabControlGridSettings"/>
+            </TabItem>
+           
+        </TabControl>
 
     </Grid>
 </Window>

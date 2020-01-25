@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\marce\Documents\Git_repos\MatMagSoftware\02_Software\MatMag\MatMag\obj\Debug\
+D:\Git_Repos\MatMagWPF\02_Software\MatMag\MatMag\obj\Debug\
 MatMag
 none
 false
 DEBUG;TRACE
-C:\Users\marce\Documents\Git_repos\MatMagSoftware\02_Software\MatMag\MatMag\App.xaml
-4-174929768
+D:\Git_Repos\MatMagWPF\02_Software\MatMag\MatMag\App.xaml
+5-1872845553
 
-10-1123617379
-16206272433
-cardOrder.xaml;DateTimePicker.xaml;MainWindow.xaml;ucListView.xaml;
+12227415591
+16-422475584
+Cards\cardAddress.xaml;Cards\cardOrder.xaml;DateTimePicker.xaml;MainWindow.xaml;ucListView.xaml;
 
 False
 

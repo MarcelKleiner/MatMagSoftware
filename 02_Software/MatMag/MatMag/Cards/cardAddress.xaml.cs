@@ -1,5 +1,4 @@
-﻿using MatMag.Klassen;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -17,18 +16,13 @@ using System.Windows.Shapes;
 namespace MatMag
 {
     /// <summary>
-    /// Interaktionslogik für MainWindow.xaml
+    /// Interaction logic for cardAddress.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class cardAddress : UserControl
     {
-        public MainWindow()
+        public cardAddress()
         {
             InitializeComponent();
-            new MainFrameControl(this);
-            new CardControl(this);
-            new cardAddress();
         }
-
-
     }
 }

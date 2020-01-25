@@ -1,21 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\marce\\Documents\\Git_repos\\MatMagSoftware\\02_Software\\MatMag\\MatMag\\MatMag.csproj": {}
+    "D:\\Git_Repos\\MatMagWPF\\02_Software\\MatMag\\MatMag\\MatMag.csproj": {}
   },
   "projects": {
-    "C:\\Users\\marce\\Documents\\Git_repos\\MatMagSoftware\\02_Software\\MatMag\\MatMag\\MatMag.csproj": {
+    "D:\\Git_Repos\\MatMagWPF\\02_Software\\MatMag\\MatMag\\MatMag.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\marce\\Documents\\Git_repos\\MatMagSoftware\\02_Software\\MatMag\\MatMag\\MatMag.csproj",
+        "projectUniqueName": "D:\\Git_Repos\\MatMagWPF\\02_Software\\MatMag\\MatMag\\MatMag.csproj",
         "projectName": "MatMag",
-        "projectPath": "C:\\Users\\marce\\Documents\\Git_repos\\MatMagSoftware\\02_Software\\MatMag\\MatMag\\MatMag.csproj",
-        "packagesPath": "C:\\Users\\marce\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\marce\\Documents\\Git_repos\\MatMagSoftware\\02_Software\\MatMag\\MatMag\\obj\\",
+        "projectPath": "D:\\Git_Repos\\MatMagWPF\\02_Software\\MatMag\\MatMag\\MatMag.csproj",
+        "packagesPath": "C:\\Users\\Marcel-Laptop\\.nuget\\packages\\",
+        "outputPath": "D:\\Git_Repos\\MatMagWPF\\02_Software\\MatMag\\MatMag\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "configFilePaths": [
-          "C:\\Users\\marce\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Marcel-Laptop\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -23,7 +23,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://www.nuget.org/api/v2/": {}
         },
         "frameworks": {
           "net472": {

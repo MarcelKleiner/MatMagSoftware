@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
+using System.Windows.Controls.Primitives;
 using System.Windows.Input;
 using System.Windows.Media;
 
@@ -12,6 +13,9 @@ namespace MatMag.Klassen
     class CardControl
     {
         private MainWindow mainWindow;
+
+        private cardAddress cardAddress;
+        private cardOrder cardOrder;
 
         private readonly Brush darkBlue = new SolidColorBrush(Color.FromRgb(16,24,106));
         private readonly Brush lightBlue = new SolidColorBrush(Color.FromRgb(99, 160, 222));
@@ -22,7 +26,9 @@ namespace MatMag.Klassen
         public CardControl(MainWindow mainWindow)
         {
             this.mainWindow = mainWindow;
+
             addEventHandler();
+            AddCardControls();
         }
 
 
@@ -63,6 +69,20 @@ namespace MatMag.Klassen
             mainWindow.SizeChanged += new SizeChangedEventHandler(this.mainWindow_SizeChanged);
         }
 
+        private void AddCardControls()
+        {
+            this.cardAddress = new cardAddress();
+            this.cardOrder = new cardOrder();
+
+            cardAddress.Height = Double.NaN;
+            cardAddress.Width = Double.NaN;
+
+            cardOrder.Height = Double.NaN;
+            cardOrder.Width = Double.NaN;
+
+            this.mainWindow.tabControlGridOrder.Children.Add(cardOrder);
+            this.mainWindow.tabControlGridAddress.Children.Add(cardAddress);
+        }
 
         private void resetCommand()
         {
@@ -104,6 +124,7 @@ namespace MatMag.Klassen
             resetCommand();
             mainWindow.cmdOrder.Background = lightBlue1;
             cmdClicked[1] = true;
+            mainWindow.tabControl.SelectedIndex = 0;
             //ToDo
         }
 
@@ -165,6 +186,8 @@ namespace MatMag.Klassen
             resetCommand();
             mainWindow.cmdAddress.Background = lightBlue;
             cmdClicked[4] = true;
+            mainWindow.tabControl.SelectedIndex = 3;
+          
         }
 
 

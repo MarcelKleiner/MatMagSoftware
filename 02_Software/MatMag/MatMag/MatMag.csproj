@@ -55,13 +55,21 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Cards\cardAddress.xaml.cs">
+      <DependentUpon>cardAddress.xaml</DependentUpon>
+    </Compile>
     <Compile Include="DateTimePicker.xaml.cs">
       <DependentUpon>DateTimePicker.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Klassen\OrderDataGridControl.cs" />
     <Compile Include="ucListView.xaml.cs">
       <DependentUpon>ucListView.xaml</DependentUpon>
     </Compile>
-    <Page Include="cardOrder.xaml">
+    <Page Include="Cards\cardAddress.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Cards\cardOrder.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -77,7 +85,7 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="cardOrder.xaml.cs">
+    <Compile Include="Cards\cardOrder.xaml.cs">
       <DependentUpon>cardOrder.xaml</DependentUpon>
     </Compile>
     <Compile Include="Klassen\CardControl.cs" />

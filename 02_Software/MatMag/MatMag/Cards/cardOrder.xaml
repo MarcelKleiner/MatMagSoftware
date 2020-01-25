@@ -16,13 +16,13 @@
                 <ColumnDefinition Width="79*"/>
                 <ColumnDefinition Width="121*"/>
             </Grid.ColumnDefinitions>
-            <Grid x:Name="overviewGrid" Background="#FF63A0DE">
+            <Grid x:Name="overviewGrid" Background="White">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="50"/>
                     <RowDefinition/>
                     <RowDefinition Height="60"/>
                 </Grid.RowDefinitions>
-                <Grid Margin="0" Background="#FF2F7AC4">
+                <Grid Margin="0" Background="White">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="20"/>
                         <ColumnDefinition Width="50"/>
@@ -31,7 +31,7 @@
                     <Grid Grid.Column="1" Margin="0">
                         <Image x:Name="image" Margin="15" Source="Icon/Search_64px.png"/>
                     </Grid>
-                    <TextBox x:Name="textBox" Grid.Column="2" Margin="0,16" TextWrapping="Wrap" Text="suchen..." VerticalAlignment="Center" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" SelectionBrush="{x:Null}" HorizontalAlignment="Left" Width="236">
+                    <TextBox x:Name="textBox" Grid.Column="2" Margin="0,16" TextWrapping="Wrap" Text="suchen..." VerticalAlignment="Center" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="Black" SelectionBrush="{x:Null}" HorizontalAlignment="Left" Width="236">
                         <TextBox.Resources>
                             <Style TargetType="{x:Type TextBox}">
                                 <Setter Property="BorderBrush" Value="Transparent"/>
@@ -50,38 +50,38 @@
                     <RadioButton x:Name="radioButton" Content="Offene" HorizontalAlignment="Left" Margin="10,3,0,3" VerticalAlignment="Center"/>
                     <RadioButton x:Name="radioButton1" Content="Alle" HorizontalAlignment="Left" Margin="0,3,0,0" VerticalAlignment="Center" Grid.Column="1" IsChecked="True" Height="17" Width="51"/>
                 </Grid>
-                <DataGrid x:Name="dataGrid" Margin="10" SelectionChanged="DataGrid_SelectionChanged" HorizontalGridLinesBrush="#FFC7D4FF" VerticalGridLinesBrush="#FFE6ECFF" Background="{x:Null}" BorderBrush="LightBlue" Grid.Row="1" Panel.ZIndex="-13" FontSize="15" CanUserAddRows="False" ColumnHeaderHeight="35" AlternatingRowBackground="#FF80B6F7" Foreground="{x:Null}" AlternationCount="1" RowHeaderWidth="80" ColumnWidth="SizeToHeader" AutoGenerateColumns="False" CanUserResizeRows="False" HeadersVisibility="Column" EnableColumnVirtualization="True" EnableRowVirtualization="False" LayoutUpdated="DataGrid_LayoutUpdated">
+                <DataGrid x:Name="dataGrid" Margin="10" SelectionChanged="DataGrid_SelectionChanged"  Background="#FFDCD7D7" BorderBrush="#FFD1D1D1" Grid.Row="1" Panel.ZIndex="-13" FontSize="15" CanUserAddRows="False" ColumnHeaderHeight="35" AlternatingRowBackground="White" Foreground="Black" AlternationCount="1" RowHeaderWidth="80" ColumnWidth="SizeToHeader" AutoGenerateColumns="False" CanUserResizeRows="False" HeadersVisibility="Column" EnableColumnVirtualization="True" EnableRowVirtualization="False" LayoutUpdated="DataGrid_LayoutUpdated" HorizontalGridLinesBrush="#FFE5E5E5" VerticalGridLinesBrush="White">
                     <DataGrid.Resources>
 
                         <Style TargetType="{x:Type DataGridCell}">
                             <Style.Triggers>
                                 <Trigger Property="IsSelected" Value="True">
-                                    <Setter Property="Background" Value="#FF8090F7"/>
-                                    <Setter Property="BorderBrush" Value="#FF8090F7"/>
+                                    <Setter Property="Background" Value="#FFFDAEAE"/>
+                                    <Setter Property="BorderBrush" Value="Black"/>
                                 </Trigger>
                             </Style.Triggers>
                         </Style>
 
 
 
-                        <SolidColorBrush x:Key="{x:Static SystemColors.HighlightBrushKey}" Color="#FF8090F7"/>
+                        <SolidColorBrush x:Key="{x:Static SystemColors.HighlightBrushKey}" Color="Black"/>
                         <Style TargetType="{x:Type DataGridColumnHeader}">
-                            <Setter Property="Background" Value="Transparent"/>
-                            <Setter Property="BorderThickness" Value="0.5,0.5,1,6"/>
-                            <Setter Property="BorderBrush" Value="#FF80B6F7"/>
-                            <Setter Property="Foreground" Value="White"/>
+                            <Setter Property="Background" Value="White"/>
+                            <Setter Property="BorderThickness" Value="0.1,0,0.5,0.5"/>
+                            <Setter Property="BorderBrush" Value="#FFDFDFDF"/>
+                            <Setter Property="Foreground" Value="Black"/>
                             <Setter Property="Height" Value="35"/>
                         </Style>
                         <Style TargetType="{x:Type DataGridRow}">
                             <Setter Property="Background" Value="Transparent"/>
                         </Style>
                         <Style TargetType="{x:Type DataGrid}">
-                            <Setter Property="BorderBrush" Value="#FF80B6F7"/>
+                            <Setter Property="BorderBrush" Value="#FFD0D0D0"/>
                             <Setter Property="BorderThickness" Value="1,1,1,1"/>
                         </Style>
                         <Style TargetType="{x:Type ScrollBar}">
                             <Setter Property="Background" Value="#FF80B6F7"/>
-                            <Setter Property="Foreground" Value="LightBlue"/>
+                            <Setter Property="Foreground" Value="White"/>
                             <Setter Property="BorderBrush" Value="Transparent"/>
                         </Style>
                     </DataGrid.Resources>
@@ -92,13 +92,8 @@
                         <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Datum Rückgabe" Width="Auto"/>
                         <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Abgeschlossen" Width="Auto"/>
                     </DataGrid.Columns>
-                    <Button Height="10" Width="10"/>
-                    <Button/>
-                    <Button/>
-                    <Button/>
-                    <Button/>
-                    <Button/>
-                    <Button/>
+
+
                 </DataGrid>
             </Grid>
             <GridSplitter x:Name="gridSplitter" Grid.Column="1" HorizontalAlignment="Left" Margin="0" Width="10"/>
@@ -108,7 +103,7 @@
                     <RowDefinition Height="215"/>
                     <RowDefinition/>
                 </Grid.RowDefinitions>
-                <DataGrid x:Name="dataGrid_Copy" Margin="20,10" SelectionChanged="DataGrid_SelectionChanged" HorizontalGridLinesBrush="#FFC7D4FF" VerticalGridLinesBrush="#FFE6ECFF" Background="{x:Null}" BorderBrush="LightBlue" Panel.ZIndex="-13" FontSize="15" CanUserAddRows="False" ColumnHeaderHeight="35" AlternatingRowBackground="#FF80B6F7" Foreground="{x:Null}" AlternationCount="1" RowHeaderWidth="80" ColumnWidth="SizeToHeader" AutoGenerateColumns="False" CanUserResizeRows="False" HeadersVisibility="Column" EnableColumnVirtualization="True" EnableRowVirtualization="False" LayoutUpdated="DataGrid_LayoutUpdated" Grid.Row="1">
+                <DataGrid x:Name="dataGrid_Copy" Margin="20,10" SelectionChanged="DataGrid_SelectionChanged" HorizontalGridLinesBrush="#FFC7D4FF" VerticalGridLinesBrush="#FFE6ECFF" Background="{x:Null}" BorderBrush="LightBlue" Panel.ZIndex="-13" FontSize="15" CanUserAddRows="False" ColumnHeaderHeight="35" AlternatingRowBackground="White" Foreground="{x:Null}" AlternationCount="1" RowHeaderWidth="80" ColumnWidth="SizeToHeader" AutoGenerateColumns="False" CanUserResizeRows="False" HeadersVisibility="Column" EnableColumnVirtualization="True" EnableRowVirtualization="False" LayoutUpdated="DataGrid_LayoutUpdated" Grid.Row="1">
                     <DataGrid.Resources>
 
                         <Style TargetType="{x:Type DataGridCell}">
@@ -125,9 +120,9 @@
                         <SolidColorBrush x:Key="{x:Static SystemColors.HighlightBrushKey}" Color="#FF8090F7"/>
                         <Style TargetType="{x:Type DataGridColumnHeader}">
                             <Setter Property="Background" Value="Transparent"/>
-                            <Setter Property="BorderThickness" Value="0.5,0.5,1,6"/>
+                            <Setter Property="BorderThickness" Value="0.5,0.5,1,1"/>
                             <Setter Property="BorderBrush" Value="#FF80B6F7"/>
-                            <Setter Property="Foreground" Value="White"/>
+                            <Setter Property="Foreground" Value="Black"/>
                             <Setter Property="Height" Value="35"/>
                         </Style>
                         <Style TargetType="{x:Type DataGridRow}">
