@@ -13,14 +13,13 @@ namespace MatMag
     /// </summary>
     public partial class DateTimePicker : Window
     {
-        private int actualTimeMinute;
-        private int actualTimeHour;
+        private readonly int actualTimeMinute;
+        private readonly int actualTimeHour;
 
-        private List<Label> hourLblList = new List<Label>();
-        private List<Label> minuteLblList = new List<Label>();
+        private readonly List<Label> hourLblList = new List<Label>();
+        private readonly List<Label> minuteLblList = new List<Label>();
 
         private String selectedDate;
-        private String selectedTime;
 
         public DateTimePicker()
         {
@@ -38,7 +37,7 @@ namespace MatMag
             hourLblList.Add(lblHr4);
             hourLblList.Add(lblHr5);
             hourLblList.Add(lblHr6);
-            hourChange(actualTimeHour);
+            HourChange(actualTimeHour);
 
             //Minuten Label in liste eintragen und initialisieren
             minuteLblList.Add(lblMin0);
@@ -48,7 +47,7 @@ namespace MatMag
             minuteLblList.Add(lblMin4);
             minuteLblList.Add(lblMin5);
             minuteLblList.Add(lblMin6);
-            minuteChange(actualTimeMinute);
+            MinuteChange(actualTimeMinute);
 
             selectedDate = DateTime.Now.ToString("dd.MM.yyyy");
 
@@ -58,7 +57,7 @@ namespace MatMag
         /// Stunden wechseln
         /// </summary>
         /// <param name="timeHour"> Aktuelle Zeit an auswahlposition</param>
-        private void hourChange(int timeHour)
+        private void HourChange(int timeHour)
         {
             int hourCounter = 0;
             int hourPos0 = timeHour - 3;
@@ -103,7 +102,7 @@ namespace MatMag
         /// Minuten Wechsel
         /// </summary>
         /// <param name="timeMinute"></param>
-        private void minuteChange(int timeMinute)
+        private void MinuteChange(int timeMinute)
         {
             int minuteCounter = 0;
             int minutePos0 = timeMinute - 15;
@@ -156,11 +155,11 @@ namespace MatMag
         {
             if(e.Delta < 0)
             {
-                hourChange(Convert.ToInt32(lblHr3.Content) + 1);
+                HourChange(Convert.ToInt32(lblHr3.Content) + 1);
             }
             else
             {
-                hourChange(Convert.ToInt32(lblHr3.Content) - 1);
+                HourChange(Convert.ToInt32(lblHr3.Content) - 1);
             }
             
         }
@@ -173,11 +172,11 @@ namespace MatMag
         {
             if (e.Delta < 0)
             {
-                minuteChange(Convert.ToInt32(lblMin3.Content) + 5);
+                MinuteChange(Convert.ToInt32(lblMin3.Content) + 5);
             }
             else
             {
-                minuteChange(Convert.ToInt32(lblMin3.Content) - 5);
+                MinuteChange(Convert.ToInt32(lblMin3.Content) - 5);
             }
         }
 
@@ -199,37 +198,37 @@ namespace MatMag
         /// <param name="e"></param>
         private void LblHr0_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
         {
-            hourChange(Convert.ToInt32(lblHr0.Content));
+            HourChange(Convert.ToInt32(lblHr0.Content));
         }
 
         private void LblHr1_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
-            hourChange(Convert.ToInt32(lblHr1.Content));
+            HourChange(Convert.ToInt32(lblHr1.Content));
         }
 
         private void LblHr2_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
-            hourChange(Convert.ToInt32(lblHr2.Content));
+            HourChange(Convert.ToInt32(lblHr2.Content));
         }
 
         private void LblHr3_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
-            hourChange(Convert.ToInt32(lblHr3.Content));
+            HourChange(Convert.ToInt32(lblHr3.Content));
         }
 
         private void LblHr4_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
-            hourChange(Convert.ToInt32(lblHr4.Content));
+            HourChange(Convert.ToInt32(lblHr4.Content));
         }
 
         private void LblHr5_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
-            hourChange(Convert.ToInt32(lblHr5.Content));
+            HourChange(Convert.ToInt32(lblHr5.Content));
         }
 
         private void LblHr6_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
         {
-            hourChange(Convert.ToInt32(lblHr6.Content));
+            HourChange(Convert.ToInt32(lblHr6.Content));
         }
 
 
@@ -242,37 +241,37 @@ namespace MatMag
 
         private void LblMin0_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
         {
-            minuteChange(Convert.ToInt32(lblMin0.Content));
+            MinuteChange(Convert.ToInt32(lblMin0.Content));
         }
 
         private void LblMin1_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
-            minuteChange(Convert.ToInt32(lblMin1.Content));
+            MinuteChange(Convert.ToInt32(lblMin1.Content));
         }
 
         private void LblMin2_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
-            minuteChange(Convert.ToInt32(lblMin2.Content));
+            MinuteChange(Convert.ToInt32(lblMin2.Content));
         }
 
         private void LblMin3_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
-            minuteChange(Convert.ToInt32(lblMin3.Content));
+            MinuteChange(Convert.ToInt32(lblMin3.Content));
         }
 
         private void LblMin4_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
-            minuteChange(Convert.ToInt32(lblMin4.Content));
+            MinuteChange(Convert.ToInt32(lblMin4.Content));
         }
 
         private void LblMin5_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
-            minuteChange(Convert.ToInt32(lblMin5.Content));
+            MinuteChange(Convert.ToInt32(lblMin5.Content));
         }
 
         private void LblMin6_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
-            minuteChange(Convert.ToInt32(lblMin6.Content));
+            MinuteChange(Convert.ToInt32(lblMin6.Content));
         }
 
 

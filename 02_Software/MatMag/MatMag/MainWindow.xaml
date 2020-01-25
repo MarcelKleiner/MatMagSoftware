@@ -128,6 +128,7 @@
             </Grid>
         </Grid>
         <Image x:Name="cmdSearch" Margin="10" Source="Icon/Search_64px.png"/>
+<<<<<<< HEAD
         <TabControl x:Name="tabControl" Grid.Column="2" Margin="0,-3,0,0" Grid.Row="1" Grid.ColumnSpan="2" Padding="0" Background="White">
             <TabItem Header="cardOrder" Visibility="Hidden" Height="0">
                 <Grid x:Name="tabControlGridOrder"/>
@@ -155,6 +156,43 @@
             </TabItem>
            
         </TabControl>
+=======
+        <Grid x:Name="gridMainCard" Grid.ColumnSpan="2" Grid.Column="2" Margin="0" Grid.Row="1" Background="#FFE4E4E4">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition Height="50"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <TabControl x:Name="tabControl" Margin="0,0,0,0" Grid.RowSpan="2" Padding="0" BorderBrush="White" BorderThickness="0">
+                <TabItem Header="TabItem" Height="0" Visibility="Hidden">
+                    <Grid x:Name="tabOrder" Background="#FFFFFF"/>
+                </TabItem>
+                <TabItem Header="TabItem" Height="0" Visibility="Hidden">
+                    <Grid x:Name="tabArticle" Background="#FFFFFF"/>
+                </TabItem>
+                <TabItem Header="TabItem" Height="0" Visibility="Hidden">
+                    <Grid x:Name="tabBox" Background="#FFFFFF"/>
+                </TabItem>
+                <TabItem Header="TabItem" Height="0" Visibility="Hidden">
+                    <Grid x:Name="tabAddress" Background="#FFFFFF"/>
+                </TabItem>
+                <TabItem Header="TabItem" Height="0" Visibility="Hidden">
+                    <Grid x:Name="tabBil" Background="#FFFFFF"/>
+                </TabItem>
+                <TabItem Header="TabItem" Height="0" Visibility="Hidden">
+                    <Grid x:Name="tabHelp" Background="#FFFFFF"/>
+                </TabItem>
+                <TabItem Header="TabItem" Height="0" Visibility="Hidden">
+                    <Grid x:Name="tabUser" Background="#FFFFFF"/>
+                </TabItem>
+                <TabItem Header="TabItem" Height="0" Visibility="Hidden">
+                    <Grid x:Name="tabSettings" Background="#FFFFFF"/>
+                </TabItem>
+            </TabControl>
+        </Grid>
+>>>>>>> 708f6fb453b34262ed24541786a0ab2dadf6ea35
 
     </Grid>
 </Window>

@@ -1,8 +1,13 @@
+<<<<<<< HEAD
 ﻿<UserControl x:Class="MatMag.cardAddress"
+=======
+﻿<UserControl x:Class="MatMag.Cards.CardAddress"
+>>>>>>> 708f6fb453b34262ed24541786a0ab2dadf6ea35
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+<<<<<<< HEAD
              xmlns:local="clr-namespace:MatMag"
              mc:Ignorable="d" Width="1182.4" Height="723.6">
     <Grid>
@@ -13,19 +18,39 @@
             </Grid.ColumnDefinitions>
             <GridSplitter x:Name="gridSplitter" Grid.Column="1" HorizontalAlignment="Left" Margin="0" Width="2"/>
             <Grid x:Name="overviewGrid" Background="#FF63A0DE" Margin="0">
+=======
+             xmlns:local="clr-namespace:MatMag.Cards"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid Margin="0,0,-936,-378">
+        <Grid x:Name="gridOrderPreparation" Margin="0" Background="White">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="79*"/>
+                <ColumnDefinition Width="121*"/>
+            </Grid.ColumnDefinitions>
+            <Grid x:Name="overviewGrid" Background="White">
+>>>>>>> 708f6fb453b34262ed24541786a0ab2dadf6ea35
                 <Grid.RowDefinitions>
                     <RowDefinition Height="50"/>
                     <RowDefinition/>
                     <RowDefinition Height="60"/>
                 </Grid.RowDefinitions>
+<<<<<<< HEAD
                 <Grid Margin="0" Background="#FF2F7AC4">
+=======
+                <Grid Margin="0" Background="White">
+>>>>>>> 708f6fb453b34262ed24541786a0ab2dadf6ea35
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="20"/>
                         <ColumnDefinition Width="50"/>
                         <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
                     <Grid Grid.Column="1" Margin="0">
+<<<<<<< HEAD
                         <Image x:Name="image" Margin="15" Source="/MatMag;component/Icon/Search_64px.png"/>
+=======
+                        <Image x:Name="image" Margin="15" Source="../Icon/Search_64px.png"/>
+>>>>>>> 708f6fb453b34262ed24541786a0ab2dadf6ea35
                     </Grid>
                     <TextBox x:Name="textBox" Grid.Column="2" Margin="0,16" TextWrapping="Wrap" Text="suchen..." VerticalAlignment="Center" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" SelectionBrush="{x:Null}" HorizontalAlignment="Left" Width="236">
                         <TextBox.Resources>
@@ -38,7 +63,11 @@
                     </TextBox>
                     <Rectangle Grid.Column="2" Fill="Black" Height="1" Margin="2,34,10,0" Stroke="Black" VerticalAlignment="Top" Width="246" HorizontalAlignment="Left"/>
                 </Grid>
+<<<<<<< HEAD
                 <Grid Margin="40,5,40,35" Grid.Row="2" Background="#FFAFCFF0">
+=======
+                <Grid Margin="40,5,40,35" Grid.Row="2" Background="White">
+>>>>>>> 708f6fb453b34262ed24541786a0ab2dadf6ea35
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="110"/>
                         <ColumnDefinition/>
@@ -46,14 +75,23 @@
                     <RadioButton x:Name="radioButton" Content="Offene" HorizontalAlignment="Left" Margin="10,3,0,3" VerticalAlignment="Center"/>
                     <RadioButton x:Name="radioButton1" Content="Alle" HorizontalAlignment="Left" Margin="0,3,0,0" VerticalAlignment="Center" Grid.Column="1" IsChecked="True" Height="17" Width="51"/>
                 </Grid>
+<<<<<<< HEAD
                 <DataGrid x:Name="dataGrid" Margin="10" HorizontalGridLinesBrush="#FFC7D4FF" VerticalGridLinesBrush="#FFE6ECFF" Background="{x:Null}" BorderBrush="LightBlue" Grid.Row="1" Panel.ZIndex="-13" FontSize="15" CanUserAddRows="False" ColumnHeaderHeight="35" AlternatingRowBackground="#FF80B6F7" Foreground="{x:Null}" AlternationCount="1" RowHeaderWidth="80" ColumnWidth="SizeToHeader" AutoGenerateColumns="False" CanUserResizeRows="False" HeadersVisibility="Column" EnableColumnVirtualization="True" EnableRowVirtualization="False">
+=======
+                <DataGrid x:Name="dgOrderOverview" Margin="10" HorizontalGridLinesBrush="LightGray" VerticalGridLinesBrush="White" Background="White" BorderBrush="#FFCFCFCF" Panel.ZIndex="-13" FontSize="15" CanUserAddRows="False" ColumnHeaderHeight="35" AlternatingRowBackground="White" Foreground="Black" AlternationCount="1" RowHeaderWidth="80" ColumnWidth="SizeToHeader" AutoGenerateColumns="False" CanUserResizeRows="False" HeadersVisibility="Column" EnableColumnVirtualization="True" EnableRowVirtualization="False" Grid.Row="1">
+>>>>>>> 708f6fb453b34262ed24541786a0ab2dadf6ea35
                     <DataGrid.Resources>
 
                         <Style TargetType="{x:Type DataGridCell}">
                             <Style.Triggers>
                                 <Trigger Property="IsSelected" Value="True">
+<<<<<<< HEAD
                                     <Setter Property="Background" Value="#FF8090F7"/>
                                     <Setter Property="BorderBrush" Value="#FF8090F7"/>
+=======
+                                    <Setter Property="Background" Value="#FFD3D3D3"/>
+                                    <Setter Property="BorderBrush" Value="#FFD3D3D3"/>
+>>>>>>> 708f6fb453b34262ed24541786a0ab2dadf6ea35
                                 </Trigger>
                             </Style.Triggers>
                         </Style>
@@ -63,9 +101,15 @@
                         <SolidColorBrush x:Key="{x:Static SystemColors.HighlightBrushKey}" Color="#FF8090F7"/>
                         <Style TargetType="{x:Type DataGridColumnHeader}">
                             <Setter Property="Background" Value="Transparent"/>
+<<<<<<< HEAD
                             <Setter Property="BorderThickness" Value="0.5,0.5,1,6"/>
                             <Setter Property="BorderBrush" Value="#FF80B6F7"/>
                             <Setter Property="Foreground" Value="White"/>
+=======
+                            <Setter Property="BorderThickness" Value="0.5,0.5,1,1"/>
+                            <Setter Property="BorderBrush" Value="#FFD3D3D3"/>
+                            <Setter Property="Foreground" Value="Black"/>
+>>>>>>> 708f6fb453b34262ed24541786a0ab2dadf6ea35
                             <Setter Property="Height" Value="35"/>
                         </Style>
                         <Style TargetType="{x:Type DataGridRow}">
@@ -75,6 +119,7 @@
                             <Setter Property="BorderBrush" Value="#FF80B6F7"/>
                             <Setter Property="BorderThickness" Value="1,1,1,1"/>
                         </Style>
+<<<<<<< HEAD
                         <Style TargetType="{x:Type ScrollBar}">
                             <Setter Property="Background" Value="#FF80B6F7"/>
                             <Setter Property="Foreground" Value="LightBlue"/>
@@ -87,11 +132,22 @@
                         <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Vorname" Width="Auto"/>
                         <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Datum Rückgabe" Width="Auto"/>
                         <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Abgeschlossen" Width="Auto"/>
+=======
+
+                    </DataGrid.Resources>
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Besteller" Width="100"/>
+                        <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Artikel Nr." Width="100"/>
+                        <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Datum Fassung" Width="130"/>
+                        <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Datum Rückgabe" Width="130"/>
+                        <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Abgeschlossen" Width="150"/>
+>>>>>>> 708f6fb453b34262ed24541786a0ab2dadf6ea35
                     </DataGrid.Columns>
                     <Button Height="10" Width="10"/>
                     <Button/>
                     <Button/>
                     <Button/>
+<<<<<<< HEAD
                     <Button/>
                     <Button/>
                     <Button/>
@@ -121,6 +177,86 @@
                                     <Trigger Property="IsSelected" Value="True">
                                         <Setter Property="Background" Value="#FF8090F7"/>
                                         <Setter Property="BorderBrush" Value="#FF8090F7"/>
+=======
+
+                </DataGrid>
+            </Grid>
+            <GridSplitter x:Name="gridSplitter" Grid.Column="1" HorizontalAlignment="Left" Margin="0" Width="10"/>
+            <Grid Grid.Column="1" Margin="4,0,0,0" Background="White">
+                <Grid Margin="0,0,0,17" Background="White">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="300"/>
+                        <RowDefinition Height="70"/>
+                        <RowDefinition/>
+                        <RowDefinition Height="70"/>
+                    </Grid.RowDefinitions>
+                    <Grid Margin="0" Background="#FFFBFAFA">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="186"/>
+                            <ColumnDefinition Width="200"/>
+                            <ColumnDefinition Width="80"/>
+                            <ColumnDefinition Width="180"/>
+                            <ColumnDefinition Width="Auto" MinWidth="129"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="0*"/>
+                            <RowDefinition Height="50"/>
+                            <RowDefinition Height="40"/>
+                            <RowDefinition Height="40"/>
+                            <RowDefinition Height="40"/>
+                            <RowDefinition Height="40"/>
+                            <RowDefinition Height="40"/>
+                            <RowDefinition/>
+
+                        </Grid.RowDefinitions>
+                        <TextBox x:Name="_2" Grid.Column="1" Margin="0,0,30,0" TextWrapping="Wrap" VerticalAlignment="Center" BorderBrush="#FFD6D6D6" IsEnabled="False" Background="{x:Null}" Text="13545" Grid.Row="2" Padding="2"/>
+                        <Label x:Name="label" Content="Besteller Nr." Margin="20,0,0,0" VerticalAlignment="Center" Grid.Row="2" HorizontalAlignment="Left" Width="90" Height="26"/>
+                        <Label x:Name="label_Copy" Content="Name" Margin="20,0,0,0" VerticalAlignment="Center" Grid.Row="3" HorizontalAlignment="Left" Width="77" Height="26"/>
+                        <ComboBox x:Name="comboBox1" TabIndex="1" Grid.Column="1" Margin="0,0,30,0" Grid.Row="3" VerticalAlignment="Center" IsEditable="True"/>
+                        <Label x:Name="label_Copy1" Content="Vorname" Margin="20,0,10,0" VerticalAlignment="Center" Grid.Row="4"/>
+                        <Label x:Name="lblDatePickup" TabIndex="2" Grid.Column="1" Margin="0,0,30,0" Grid.Row="4" VerticalAlignment="Center" BorderBrush="#FF838383" Background="White" BorderThickness="1" Content=" " Cursor="IBeam" TextOptions.TextFormattingMode="Display" Padding="2"/>
+                        <Label x:Name="label_Copy6" Content="Telefon Nr." Margin="0" VerticalAlignment="Center" Grid.Row="6" Grid.Column="2" RenderTransformOrigin="0.567,-0.853"/>
+                        <Label x:Name="lblTimePickup" TabIndex="3" Grid.Column="3" Margin="0,0,30,0" Grid.Row="6" VerticalAlignment="Center" BorderBrush="#FF838383" Background="White" BorderThickness="1" Padding="2" Content=" " SnapsToDevicePixels="True"/>
+                        <Label x:Name="lblTimeReturn" TabIndex="5" Grid.Column="3" Margin="0,0,30,0" Grid.Row="5"  VerticalAlignment="Center" BorderBrush="#FF838383" Background="White" BorderThickness="1" Content="" Padding="2" />
+                        <Label x:Name="label_Copy2" Content="Ort" Margin="20,0,10,0" VerticalAlignment="Center" Grid.Row="5"/>
+                        <Label x:Name="lblDateReturn" TabIndex="4" Grid.Column="1" Margin="0,0,30,0" Grid.Row="5" VerticalAlignment="Center" BorderBrush="#FF838383" Background="White" BorderThickness="1" Padding="2" Content=" " SnapsToDevicePixels="True"/>
+                        <Label x:Name="label_Copy7" Content="PLZ" Margin="0" VerticalAlignment="Center" Grid.Row="5" Grid.Column="2" RenderTransformOrigin="0.622,-0.706" Height="26"/>
+                        <Label x:Name="label_Copy5" Content="E-Mail" Margin="20,0,10,0" VerticalAlignment="Center" Grid.Row="6" Height="26"/>
+                        <ComboBox x:Name="comboBox" Grid.Column="1" Margin="0,0,30,0" Grid.Row="6" VerticalAlignment="Center" IsEditable="True"/>
+                    </Grid>
+                    <Grid Background="White" Margin="0" Grid.Row="1">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="120"/>
+                            <ColumnDefinition Width="200"/>
+                            <ColumnDefinition Width="120"/>
+                            <ColumnDefinition Width="140"/>
+                            <ColumnDefinition Width="180"/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="70"/>
+                        </Grid.RowDefinitions>
+                        <Label x:Name="label_Copy3" Content="Artikel" Margin="20,22,10,22" VerticalAlignment="Center" Height="26"/>
+                        <ComboBox x:Name="comboBox_Copy" TabIndex="6" Grid.Column="1" HorizontalAlignment="Left" Margin="0,22" Width="159" BorderBrush="Black" Foreground="Black" Background="{x:Null}" IsEditable="True" VerticalAlignment="Center"/>
+                        <Label x:Name="label_Copy4" Content="Artikel Nr." Margin="0,22,22,22" VerticalAlignment="Center" Grid.Column="2" Height="26"/>
+                        <TextBox x:Name="textBox1_Copy4" TabIndex="7" Grid.Column="3" HorizontalAlignment="Left" Margin="0,25" TextWrapping="Wrap" VerticalAlignment="Center" Width="100" BorderBrush="#FFAEAEAE" Height="20"/>
+                        <Button x:Name="cmdArticleAdd" Content="Hinzufügen" Margin="30,15" BorderBrush="{x:Null}" Background="#FF2F7AC4" Foreground="White" Grid.Column="4"/>
+                        <Grid Grid.Column="3" HorizontalAlignment="Left" Height="32" Margin="22,-16,0,54" VerticalAlignment="Center" Width="200" RenderTransformOrigin="0.898,-1.703" Grid.ColumnSpan="2">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="26"/>
+                                <ColumnDefinition/>
+                                <ColumnDefinition Width="26"/>
+                            </Grid.ColumnDefinitions>
+                        </Grid>
+                    </Grid>
+                    <DataGrid x:Name="dgOrderOverview_Copy" Margin="10" HorizontalGridLinesBrush="LightGray" VerticalGridLinesBrush="White" Background="White" BorderBrush="#FFCFCFCF" Panel.ZIndex="-13" FontSize="15" CanUserAddRows="False" ColumnHeaderHeight="35" AlternatingRowBackground="White" Foreground="Black" AlternationCount="1" RowHeaderWidth="80" ColumnWidth="SizeToHeader" AutoGenerateColumns="False" CanUserResizeRows="False" HeadersVisibility="Column" EnableColumnVirtualization="True" EnableRowVirtualization="False" Grid.Row="2">
+                        <DataGrid.Resources>
+                            <Style TargetType="{x:Type DataGridCell}">
+                                <Style.Triggers>
+                                    <Trigger Property="IsSelected" Value="True">
+                                        <Setter Property="Background" Value="#FFD3D3D3"/>
+                                        <Setter Property="BorderBrush" Value="#FFD3D3D3"/>
+>>>>>>> 708f6fb453b34262ed24541786a0ab2dadf6ea35
                                     </Trigger>
                                 </Style.Triggers>
                             </Style>
@@ -130,8 +266,13 @@
                             <SolidColorBrush x:Key="{x:Static SystemColors.HighlightBrushKey}" Color="#FF8090F7"/>
                             <Style TargetType="{x:Type DataGridColumnHeader}">
                                 <Setter Property="Background" Value="Transparent"/>
+<<<<<<< HEAD
                                 <Setter Property="BorderThickness" Value="0.5,0.5,1,6"/>
                                 <Setter Property="BorderBrush" Value="#FF80B6F7"/>
+=======
+                                <Setter Property="BorderThickness" Value="0.5,0.5,1,1"/>
+                                <Setter Property="BorderBrush" Value="#FFD3D3D3"/>
+>>>>>>> 708f6fb453b34262ed24541786a0ab2dadf6ea35
                                 <Setter Property="Foreground" Value="Black"/>
                                 <Setter Property="Height" Value="35"/>
                             </Style>
@@ -142,6 +283,7 @@
                                 <Setter Property="BorderBrush" Value="#FF80B6F7"/>
                                 <Setter Property="BorderThickness" Value="1,1,1,1"/>
                             </Style>
+<<<<<<< HEAD
                             <Style TargetType="{x:Type ScrollBar}">
                                 <Setter Property="Background" Value="#FF80B6F7"/>
                                 <Setter Property="Foreground" Value="LightBlue"/>
@@ -199,6 +341,41 @@
                     <TextBox x:Name="textBox1_Copy5" Grid.Column="4" HorizontalAlignment="Left" Height="23" Margin="0,17.6,0,0" Grid.Row="4" TextWrapping="Wrap" VerticalAlignment="Top" Width="134"/>
                 </Grid>
             </Grid>
+=======
+                        </DataGrid.Resources>
+
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Artikel Nr." Width="100"/>
+                            <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Artikel" Width="150"/>
+                            <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Kiste" Width="100"/>
+                            <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Menge" Width="200"/>
+                            <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="Status" Width="100" />
+                        </DataGrid.Columns>
+                        <Button Height="10" Width="10" HorizontalAlignment="Center"/>
+                        <Button/>
+                        <Button/>
+                        <Button/>
+
+                    </DataGrid>
+                    <Rectangle Fill="#FFF4F4F5" Height="1" Margin="30,410,30,0" Grid.Row="2" Stroke="Black" VerticalAlignment="Bottom"/>
+                    <Grid Margin="0" Grid.Row="3" Background="White">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="160"/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition Width="160"/>
+                            <ColumnDefinition Width="160"/>
+                            <ColumnDefinition Width="160"/>
+                        </Grid.ColumnDefinitions>
+                        <Button x:Name="cmdOrderSave" Content="Speichern" Margin="20,10" BorderBrush="{x:Null}" Background="#FF2F7AC4" Foreground="White" Grid.Column="4"/>
+                        <Button x:Name="cmdOrderCancle" Content="Abbrechen" Margin="20,10" BorderBrush="{x:Null}" Background="#FF2F7AC4" Foreground="White" Grid.Column="3"/>
+                        <Button x:Name="cmdOrderNew" Content="Neu" Margin="20,10" BorderBrush="{x:Null}" Background="#FF2F7AC4" Foreground="White" Grid.Column="2"/>
+                        <Button x:Name="cmdOrderPrint" Content="Drucken" Margin="20,10" BorderBrush="{x:Null}" Background="#FF2F7AC4" Foreground="White"/>
+                    </Grid>
+                </Grid>
+            </Grid>
+            <GridSplitter x:Name="gridSplitter1" Grid.Column="1" HorizontalAlignment="Left" Margin="0" Width="4"/>
+
+>>>>>>> 708f6fb453b34262ed24541786a0ab2dadf6ea35
         </Grid>
 
     </Grid>

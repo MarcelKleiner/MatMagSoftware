@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+<<<<<<< HEAD
 namespace MatMag
 {
     /// <summary>
@@ -21,6 +22,16 @@ namespace MatMag
     public partial class cardAddress : UserControl
     {
         public cardAddress()
+=======
+namespace MatMag.Cards
+{
+    /// <summary>
+    /// Interaktionslogik für cardAddress.xaml
+    /// </summary>
+    public partial class CardAddress : UserControl
+    {
+        public CardAddress()
+>>>>>>> 708f6fb453b34262ed24541786a0ab2dadf6ea35
         {
             InitializeComponent();
         }

@@ -61,7 +61,13 @@
     <Compile Include="DateTimePicker.xaml.cs">
       <DependentUpon>DateTimePicker.xaml</DependentUpon>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="Klassen\OrderDataGridControl.cs" />
+=======
+    <Compile Include="Klassen\OrderCardControl\DataGridOrderOverwiev.cs" />
+    <Compile Include="Klassen\OrderCardControl\DateTimeControl.cs" />
+    <Compile Include="Klassen\OrderCardControl\QuantityControl.cs" />
+>>>>>>> 708f6fb453b34262ed24541786a0ab2dadf6ea35
     <Compile Include="ucListView.xaml.cs">
       <DependentUpon>ucListView.xaml</DependentUpon>
     </Compile>
@@ -157,6 +163,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Icon\Minus_64px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Klassen\AddressCardControl\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

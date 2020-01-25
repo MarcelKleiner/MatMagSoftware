@@ -9,11 +9,19 @@ MatMag
 none
 false
 DEBUG;TRACE
+<<<<<<< HEAD
 D:\Git_Repos\MatMagWPF\02_Software\MatMag\MatMag\App.xaml
 5-1872845553
 
 12227415591
 16-422475584
+=======
+C:\Users\marce\Documents\Git_repos\MatMagSoftware\02_Software\MatMag\MatMag\App.xaml
+5-1872845553
+
+141830883310
+16206272433
+>>>>>>> 708f6fb453b34262ed24541786a0ab2dadf6ea35
 Cards\cardAddress.xaml;Cards\cardOrder.xaml;DateTimePicker.xaml;MainWindow.xaml;ucListView.xaml;
 
 False
