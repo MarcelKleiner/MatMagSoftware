@@ -31,7 +31,6 @@ namespace MatMag.Klassen.oCardControl
             {
                 dgColumn[4].Width = lenght;
             }
-
         }
 
 
