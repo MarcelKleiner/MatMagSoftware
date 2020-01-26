@@ -60,3 +60,5 @@ D:\Git_Repos\MatMag\02_Software\MatMag\MatMag\obj\Debug\MatMag.csproj.CoreCompil
 D:\Git_Repos\MatMag\02_Software\MatMag\MatMag\obj\Debug\MatMag.csproj.CopyComplete
 D:\Git_Repos\MatMag\02_Software\MatMag\MatMag\obj\Debug\Cards\cardArticle.g.cs
 D:\Git_Repos\MatMag\02_Software\MatMag\MatMag\obj\Debug\Cards\cardArticle.baml
+C:\Users\marce\Documents\Git_repos\MatMagSoftware\02_Software\MatMag\MatMag\obj\Debug\Cards\cardArticle.g.cs
+C:\Users\marce\Documents\Git_repos\MatMagSoftware\02_Software\MatMag\MatMag\obj\Debug\Cards\cardArticle.baml
