@@ -1,0 +1,8 @@
+Kontrollkarte Kisten
+- Jede kiste hat einen eindeutige ID welche nicht die gleiche ist wie die Koordinaten. Dies ist für die 
+  Programmierung notwendigt, falls eine kisteenkoordinate verschoben wird werden die Artikel nicht geändert
+  (KistenID, Kisten Nr., Kisten Name)
+
+Kontrollkarte Addressen
+
+Kontrollkarte Artikel

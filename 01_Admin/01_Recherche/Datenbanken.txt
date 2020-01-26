@@ -1,0 +1,7 @@
+Mögliche Datenbanken
+-------------------------------------------------------------------------------------------------------------------
+Datenbank	Beschreibung	
+___________________________________________________________________________________________________________________
+H2		OpenSource, Embeded, Volltextsuche, kann nicht in einem Programm angezeigt werden, Serverunabhängig
+Access		Office, Bekannt, Kann in einem Programm angezeit werden 
+MySQL		OpenSource, Serverabhängig, kann nicht in einem Programm angezeigt werden,
