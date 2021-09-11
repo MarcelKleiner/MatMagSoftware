@@ -136,7 +136,7 @@
             <Grid.ColumnDefinitions>
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
-            <TabControl x:Name="tabControl" Margin="0,0,0,0" Grid.RowSpan="2" Padding="0" BorderBrush="White" BorderThickness="0">
+            <TabControl x:Name="tabControl" Margin="0,0,-0.2,0.4" Padding="0" BorderBrush="White" BorderThickness="0">
                 <TabItem Header="TabItem" Height="0" Visibility="Hidden">
                     <Grid x:Name="tabOrder" Background="#FFFFFF"/>
                 </TabItem>
@@ -162,6 +162,7 @@
                     <Grid x:Name="tabSettings" Background="#FFFFFF"/>
                 </TabItem>
             </TabControl>
+            <TextBox x:Name="txtDebug" HorizontalAlignment="Left" Height="22" Margin="22,17.6,0,0" Grid.Row="1" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="345"/>
         </Grid>
 
     </Grid>
