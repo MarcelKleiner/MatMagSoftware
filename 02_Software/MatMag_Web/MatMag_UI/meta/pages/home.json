@@ -1,0 +1,169 @@
+{
+  "access": "Everybody",
+  "components": [
+    {
+      "components": [
+        {
+          "components": [
+            {
+              "class": "col-md-6",
+              "components": [
+                {
+                  "components": [
+                    {
+                      "class": "col-md-12",
+                      "components": [
+                        {
+                          "name": "label0",
+                          "style": {
+                            "float": "right",
+                            "width": "251px"
+                          },
+                          "text": "Bestellungen",
+                          "type": "label"
+                        }
+                      ],
+                      "name": "col2",
+                      "style": {
+                        "borderBottom": "1px solid #000000",
+                        "marginBottom": "10px"
+                      },
+                      "type": "col"
+                    },
+                    {
+                      "class": "col-md-4",
+                      "components": [
+                        {
+                          "name": "label1",
+                          "text": "Suchen",
+                          "type": "label"
+                        }
+                      ],
+                      "name": "col3",
+                      "type": "col"
+                    },
+                    {
+                      "class": "col-md-7",
+                      "components": [
+                        {
+                          "name": "textbox0",
+                          "type": "textbox",
+                          "value": ""
+                        }
+                      ],
+                      "name": "col5",
+                      "type": "col"
+                    },
+                    {
+                      "class": "col-md-12",
+                      "components": [
+                        {
+                          "data": "",
+                          "name": "datagrid0",
+                          "type": "datagrid"
+                        }
+                      ],
+                      "name": "col4",
+                      "type": "col"
+                    }
+                  ],
+                  "name": "row1",
+                  "type": "row"
+                }
+              ],
+              "name": "col0",
+              "type": "col"
+            },
+            {
+              "class": "col-md-6",
+              "components": [
+                {
+                  "components": [
+                    {
+                      "class": "col-md-12",
+                      "components": [
+                        {
+                          "name": "label2",
+                          "style": {
+                            "float": "right",
+                            "width": "251px"
+                          },
+                          "text": "Artikel/Kisten",
+                          "type": "label"
+                        }
+                      ],
+                      "name": "col8",
+                      "style": {
+                        "borderBottom": "1px solid #000000",
+                        "marginBottom": "10px"
+                      },
+                      "type": "col"
+                    },
+                    {
+                      "class": "col-md-4",
+                      "components": [
+                        {
+                          "name": "label3",
+                          "text": "Suchen",
+                          "type": "label"
+                        }
+                      ],
+                      "name": "col9",
+                      "type": "col"
+                    },
+                    {
+                      "class": "col-md-7",
+                      "components": [
+                        {
+                          "name": "textbox1",
+                          "type": "textbox",
+                          "value": ""
+                        }
+                      ],
+                      "name": "col10",
+                      "type": "col"
+                    },
+                    {
+                      "class": "col-md-12",
+                      "components": [
+                        {
+                          "data": "",
+                          "name": "datagrid1",
+                          "type": "datagrid"
+                        }
+                      ],
+                      "name": "col7",
+                      "type": "col"
+                    },
+                    {
+                      "class": "col-md-12",
+                      "components": [
+                        {
+                          "data": "",
+                          "name": "datagrid2",
+                          "type": "datagrid"
+                        }
+                      ],
+                      "name": "col6",
+                      "type": "col"
+                    }
+                  ],
+                  "name": "row2",
+                  "type": "row"
+                }
+              ],
+              "name": "col1",
+              "type": "col"
+            }
+          ],
+          "name": "row0",
+          "type": "row"
+        }
+      ],
+      "container": "main",
+      "type": "content"
+    }
+  ],
+  "layout": "Main",
+  "name": "Home"
+}

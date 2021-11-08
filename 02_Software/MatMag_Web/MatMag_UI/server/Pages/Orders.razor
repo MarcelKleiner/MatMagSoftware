@@ -1,0 +1,141 @@
+﻿@page "/"
+@page "/orders"
+@layout MainLayout
+@inherits MatMag.Pages.OrdersComponent
+
+@using Radzen
+@using Radzen.Blazor
+<RadzenContent Container="main">
+  <ChildContent>
+    <div class="row">
+      <div class="col-md-5">
+        <div class="row">
+          <div class="col-md-4">
+            <RadzenLabel Text="Suchen">
+            </RadzenLabel>
+          </div>
+          <div class="col-md-5">
+            <RadzenTextBox Name="Textbox0">
+            </RadzenTextBox>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <RadzenRadioButtonList Name="Radiobuttonlist0" TValue="dynamic">
+              <Items>
+                <RadzenRadioButtonListItem Disabled="false" Text="Alle" TValue="dynamic">
+                </RadzenRadioButtonListItem>
+                <RadzenRadioButtonListItem Text="Offen" TValue="dynamic">
+                </RadzenRadioButtonListItem>
+                <RadzenRadioButtonListItem Text="Abgeschlossen" TValue="dynamic">
+                </RadzenRadioButtonListItem>
+              </Items>
+            </RadzenRadioButtonList>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <RadzenDataGrid @ref="datagrid0" TItem="dynamic">
+            </RadzenDataGrid>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-7">
+        <div class="row">
+          <div class="col-md-4">
+            <RadzenLabel Text="Bestell Nr.">
+            </RadzenLabel>
+          </div>
+          <div class="col-md-5">
+            <RadzenTextBox style="width: 179.40000915527344px" Name="Textbox2">
+            </RadzenTextBox>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <RadzenLabel Text="Besteller">
+            </RadzenLabel>
+          </div>
+          <div class="col-md-5">
+            <RadzenDropDown Name="Dropdown1" TValue="dynamic">
+            </RadzenDropDown>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <RadzenLabel Text="Datum Fassung">
+            </RadzenLabel>
+          </div>
+          <div class="col-md-5">
+            <RadzenDatePicker Name="Datepicker0" TValue="dynamic">
+            </RadzenDatePicker>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <RadzenLabel Text="Datum Rückgabe">
+            </RadzenLabel>
+          </div>
+          <div class="col-md-5">
+            <RadzenDatePicker Name="Datepicker1" TValue="dynamic">
+            </RadzenDatePicker>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <RadzenLabel Text="Zweck">
+            </RadzenLabel>
+          </div>
+          <div class="col-md-5">
+            <RadzenTextBox style="width: 178.40000915527344px" Name="Textbox1">
+            </RadzenTextBox>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <RadzenLabel Text="Artikel">
+            </RadzenLabel>
+          </div>
+          <div class="col-md-5">
+            <RadzenDropDown Name="Dropdown2" TValue="dynamic">
+            </RadzenDropDown>
+          </div>
+          <div class="col-md-6 col-lg-5 col-xl-12">
+            <RadzenButton style="background-color: #4541ff" Text="Hinzufügen">
+            </RadzenButton>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="row">
+              <div class="col-md-4">
+                <RadzenLabel Text="Bestellstatus">
+                </RadzenLabel>
+              </div>
+              <div class="col-md-5">
+                <RadzenDropDown Name="Dropdown0" TValue="dynamic">
+                </RadzenDropDown>
+              </div>
+            </div>
+            <RadzenDataGrid @ref="datagrid1" TItem="dynamic">
+            </RadzenDataGrid>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <RadzenButton style="background-color: #4541ff" Text="Bestellen">
+            </RadzenButton>
+          </div>
+          <div class="col-md-4">
+            <RadzenButton style="background-color: #4541ff" Text="Abbrechen">
+            </RadzenButton>
+          </div>
+          <div class="col-md-4">
+            <RadzenButton style="background-color: #4541ff" Text="Rechnung">
+            </RadzenButton>
+          </div>
+        </div>
+      </div>
+    </div>
+  </ChildContent>
+</RadzenContent>

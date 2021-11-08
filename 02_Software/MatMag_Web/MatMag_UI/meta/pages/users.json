@@ -1,0 +1,242 @@
+{
+  "access": "Everybody",
+  "components": [
+    {
+      "components": [
+        {
+          "components": [
+            {
+              "class": "col-xl-3 col-lg-3 col-md-3",
+              "components": [
+                {
+                  "name": "label0",
+                  "text": "Name*",
+                  "type": "label"
+                }
+              ],
+              "name": "col1",
+              "type": "col"
+            },
+            {
+              "class": "col-md-3",
+              "components": [
+                {
+                  "name": "textbox0",
+                  "type": "textbox",
+                  "value": ""
+                }
+              ],
+              "name": "col2",
+              "type": "col"
+            },
+            {
+              "class": "col-md-2 col-lg-2 col-xl-2",
+              "components": [
+                {
+                  "name": "label5",
+                  "text": "Rechte",
+                  "type": "label"
+                }
+              ],
+              "name": "col11",
+              "type": "col"
+            },
+            {
+              "class": "col-md-3",
+              "components": [
+                {
+                  "name": "dropdown0",
+                  "type": "dropdown"
+                }
+              ],
+              "name": "col12",
+              "type": "col"
+            }
+          ],
+          "name": "row0",
+          "type": "row"
+        },
+        {
+          "components": [
+            {
+              "class": "col-xl-3 col-lg-3 col-md-3",
+              "components": [
+                {
+                  "name": "label1",
+                  "text": "Vorname*",
+                  "type": "label"
+                }
+              ],
+              "name": "col0",
+              "type": "col"
+            },
+            {
+              "class": "col-md-3",
+              "components": [
+                {
+                  "name": "textbox1",
+                  "type": "textbox",
+                  "value": ""
+                }
+              ],
+              "name": "col3",
+              "type": "col"
+            }
+          ],
+          "name": "row1",
+          "type": "row"
+        },
+        {
+          "components": [
+            {
+              "class": "col-md-3 col-xl-3 col-lg-3",
+              "components": [
+                {
+                  "name": "label2",
+                  "text": "E-Mail*",
+                  "type": "label"
+                }
+              ],
+              "name": "col4",
+              "type": "col"
+            },
+            {
+              "class": "col-md-3",
+              "components": [
+                {
+                  "name": "textbox2",
+                  "type": "textbox",
+                  "value": ""
+                }
+              ],
+              "name": "col5",
+              "type": "col"
+            }
+          ],
+          "name": "row2",
+          "type": "row"
+        },
+        {
+          "components": [
+            {
+              "class": "col-xl-3 col-lg-3 col-md-3",
+              "components": [
+                {
+                  "name": "label3",
+                  "text": "Passwort*",
+                  "type": "label"
+                }
+              ],
+              "name": "col6",
+              "type": "col"
+            },
+            {
+              "class": "col-md-3",
+              "components": [
+                {
+                  "name": "textbox3",
+                  "type": "textbox",
+                  "value": ""
+                }
+              ],
+              "name": "col7",
+              "type": "col"
+            }
+          ],
+          "name": "row3",
+          "type": "row"
+        },
+        {
+          "components": [
+            {
+              "class": "col-md-3 col-lg-3 col-xl-3",
+              "components": [
+                {
+                  "name": "label4",
+                  "text": "Passwort bestätigen*",
+                  "type": "label"
+                }
+              ],
+              "name": "col8",
+              "type": "col"
+            },
+            {
+              "class": "col-md-3",
+              "components": [
+                {
+                  "name": "textbox4",
+                  "type": "textbox",
+                  "value": ""
+                }
+              ],
+              "name": "col9",
+              "type": "col"
+            }
+          ],
+          "name": "row4",
+          "type": "row"
+        },
+        {
+          "components": [
+            {
+              "class": "col-md-3",
+              "components": [
+                {
+                  "name": "txtAdd",
+                  "style": {
+                    "backgroundColor": "#4541ff"
+                  },
+                  "template": "",
+                  "text": "Hinzufügen",
+                  "type": "button"
+                }
+              ],
+              "name": "col13",
+              "type": "col"
+            },
+            {
+              "class": "col-md-3",
+              "components": [
+                {
+                  "name": "txtCancle",
+                  "style": {
+                    "backgroundColor": "#4541ff"
+                  },
+                  "template": "",
+                  "text": "Abbrechen",
+                  "type": "button"
+                }
+              ],
+              "name": "col15",
+              "type": "col"
+            }
+          ],
+          "name": "row5",
+          "type": "row"
+        },
+        {
+          "components": [
+            {
+              "class": "col-md-12",
+              "components": [
+                {
+                  "data": "",
+                  "name": "datagrid0",
+                  "type": "datagrid"
+                }
+              ],
+              "name": "col10",
+              "type": "col"
+            }
+          ],
+          "name": "row6",
+          "type": "row"
+        }
+      ],
+      "container": "main",
+      "type": "content"
+    }
+  ],
+  "layout": "Main",
+  "name": "Users"
+}

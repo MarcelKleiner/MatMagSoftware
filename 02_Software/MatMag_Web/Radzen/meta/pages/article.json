@@ -1,0 +1,261 @@
+{
+  "access": "Everybody",
+  "components": [
+    {
+      "components": [
+        {
+          "components": [
+            {
+              "class": "col-md-2 col-lg-2 col-xl-2",
+              "components": [
+                {
+                  "name": "label0",
+                  "text": "Artikel Nr.",
+                  "type": "label"
+                }
+              ],
+              "name": "col1",
+              "type": "col"
+            },
+            {
+              "class": "col-md-3",
+              "components": [
+                {
+                  "name": "textbox0",
+                  "type": "textbox",
+                  "value": ""
+                }
+              ],
+              "name": "col2",
+              "type": "col"
+            }
+          ],
+          "name": "row0",
+          "type": "row"
+        },
+        {
+          "components": [
+            {
+              "class": "col-md-2 col-lg-2 col-xl-2",
+              "components": [
+                {
+                  "name": "label1",
+                  "text": "Bezeichnung",
+                  "type": "label"
+                }
+              ],
+              "name": "col3",
+              "type": "col"
+            },
+            {
+              "class": "col-md-3",
+              "components": [
+                {
+                  "name": "textbox1",
+                  "type": "textbox",
+                  "value": ""
+                }
+              ],
+              "name": "col4",
+              "type": "col"
+            },
+            {
+              "class": "col-md-2 col-lg-2 col-xl-2",
+              "components": [
+                {
+                  "name": "label6",
+                  "text": "Alias",
+                  "type": "label"
+                }
+              ],
+              "name": "col14",
+              "type": "col"
+            },
+            {
+              "class": "col-md-3",
+              "components": [
+                {
+                  "name": "textbox6",
+                  "type": "textbox",
+                  "value": ""
+                }
+              ],
+              "name": "col16",
+              "type": "col"
+            }
+          ],
+          "name": "row1",
+          "type": "row"
+        },
+        {
+          "components": [
+            {
+              "class": "col-md-2 col-lg-2 col-xl-2",
+              "components": [
+                {
+                  "name": "label2",
+                  "text": "Preis int. K\n",
+                  "type": "label"
+                }
+              ],
+              "name": "col5",
+              "type": "col"
+            },
+            {
+              "class": "col-md-3",
+              "components": [
+                {
+                  "name": "textbox2",
+                  "type": "textbox",
+                  "value": ""
+                }
+              ],
+              "name": "col6",
+              "type": "col"
+            },
+            {
+              "class": "col-md-2",
+              "components": [
+                {
+                  "name": "label4",
+                  "text": "Preis ext. K",
+                  "type": "label"
+                }
+              ],
+              "name": "col9",
+              "type": "col"
+            },
+            {
+              "class": "col-md-3",
+              "components": [
+                {
+                  "name": "textbox4",
+                  "type": "textbox",
+                  "value": ""
+                }
+              ],
+              "name": "col11",
+              "type": "col"
+            }
+          ],
+          "name": "row3",
+          "type": "row"
+        },
+        {
+          "components": [
+            {
+              "class": "col-md-2 col-lg-2 col-xl-2",
+              "components": [
+                {
+                  "name": "label3",
+                  "text": "Preis int. NK",
+                  "type": "label"
+                }
+              ],
+              "name": "col7",
+              "type": "col"
+            },
+            {
+              "class": "col-md-3",
+              "components": [
+                {
+                  "name": "textbox3",
+                  "type": "textbox",
+                  "value": ""
+                }
+              ],
+              "name": "col8",
+              "type": "col"
+            },
+            {
+              "class": "col-md-2",
+              "components": [
+                {
+                  "name": "label5",
+                  "text": "Preis ext. NK",
+                  "type": "label"
+                }
+              ],
+              "name": "col10",
+              "type": "col"
+            },
+            {
+              "class": "col-md-3",
+              "components": [
+                {
+                  "name": "textbox5",
+                  "type": "textbox",
+                  "value": ""
+                }
+              ],
+              "name": "col12",
+              "type": "col"
+            }
+          ],
+          "name": "row5",
+          "type": "row"
+        },
+        {
+          "components": [
+            {
+              "class": "col-md-3",
+              "components": [
+                {
+                  "name": "txtAdd",
+                  "style": {
+                    "backgroundColor": "#4541ff"
+                  },
+                  "template": "",
+                  "text": "Hinzufügen",
+                  "type": "button"
+                }
+              ],
+              "name": "col13",
+              "type": "col"
+            },
+            {
+              "class": "col-md-3",
+              "components": [
+                {
+                  "name": "txtCancle",
+                  "style": {
+                    "backgroundColor": "#4541ff"
+                  },
+                  "template": "",
+                  "text": "Abbrechen",
+                  "type": "button"
+                }
+              ],
+              "name": "col15",
+              "type": "col"
+            }
+          ],
+          "name": "row4",
+          "type": "row"
+        },
+        {
+          "components": [
+            {
+              "class": "col-md-12",
+              "components": [
+                {
+                  "data": "",
+                  "name": "datagrid0",
+                  "type": "datagrid"
+                }
+              ],
+              "name": "col0",
+              "type": "col"
+            }
+          ],
+          "name": "row2",
+          "type": "row"
+        }
+      ],
+      "container": "main",
+      "type": "content"
+    }
+  ],
+  "layout": "Main",
+  "name": "Article"
+}

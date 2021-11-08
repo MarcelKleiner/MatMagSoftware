@@ -3,28 +3,31 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
 using MySql.Data;
 using MySql.Data.MySqlClient;
 using System.Windows;
+using System.Data;
 
 namespace MatMag.SQL
 {
-    class SQLConnection : IDisposable
+    class SQLConnection
     {
-        //SQL Connection default settings
-        private static readonly string server = "localhost";
-        private static readonly string user = "root";
-        private static readonly string database = "matmagdb";
-        private static readonly string port = "3306";
-        private static readonly string password = "Marce_l-1991";  //change to passwordstring
 
-        private MySqlConnection sqlConnection = null;
-
-        public SQLConnection()
+        public enum COMMAND
         {
-
+            ID,
+            Grad,
+            Name,
+            Vorname,
+            PicturePath,
+            IsChecked,
+            CardID,
+            CheckInTime,
+            CheckOutTime
         }
+
+        private const string sqlDateTimeFormat = "yyyy-MM-dd HH:mm:ss";
+        public bool IsSQLConnected = true;
 
 
         /// <summary>
@@ -35,9 +38,10 @@ namespace MatMag.SQL
         /// <param name="database"></param>
         /// <param name="password"></param>
         /// <returns>@true if connection established @false othervise</returns>
-        public static SQLConnection Connect(string server, string user, string port, string database, string password)
+        private MySqlConnection Connect(string server, string user, string port, string database, string password)
         {
-            SQLConnection sql = new SQLConnection();
+
+            MySqlConnection sql = null;
             try
             {
                 //create connection string
@@ -47,93 +51,231 @@ namespace MatMag.SQL
                     + "port=" + port + ";"
                     + "password=" + password;
                 //create new instance of MySqlConneciton with the given connectionstring
-                sql.sqlConnection = new MySqlConnection(connectionString);
+                sql = new MySqlConnection(connectionString);
                 //open sql connection
-                sql.sqlConnection.Open();
+                sql.Open();
+                IsSQLConnected = true;
             }
-            catch (Exception ex)
+            catch
             {
-                MessageBox.Show("Connection failed\n" + ex.Message);
+                IsSQLConnected = false;
             }
+
             return sql;
+
         }
 
-
-        /// <summary>
-        /// Default Connection to MySQL server
-        /// </summary>
-        /// <returns></returns>
-        public static SQLConnection Connect()
+        private MySqlConnection Connect(SQLConnectionSettings sqlComSettings)
         {
-            return Connect(server, user, port, database, password);
+            SQLConnectionSettings s = sqlComSettings;
+            return Connect(s.Server, s.User, s.Port, s.Database, s.Password);
         }
 
-
-        /// <summary>
-        /// Get server version of the connected sql database
-        /// </summary>
-        /// <returns></returns>
-        public string GetServerVersion()
+        public bool TestConnection(SQLConnectionSettings s)
         {
-            return sqlConnection.ServerVersion;
+
+            string QuerySelect = "select * from " + s.Database + "." + s.TableName;
+            MySqlConnection con = Connect(s);
+            MySqlCommand sqlCommand = new MySqlCommand(QuerySelect, con);
+            return IsSQLConnected;
+
         }
 
-
-        public void Write2DB(object data)
+        public void ClearDB(SQLConnectionSettings s)
         {
             try
             {
-                if(sqlConnection != null)
-                {
-                    MySqlCommand command = new MySqlCommand();
-                    command.Connection = sqlConnection;
-                }
-                else
-                {
-                    MessageBox.Show("No database connected");
-                }
-
+                string Query = "DELETE FROM " + s.Database + "." + s.TableName;
+                MySqlConnection con = Connect(s);
+                ExecuteSQLCommand(Query, con);
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
-
         }
 
-
-
-
-
-
-
-
-
-
-
-
-
-        /// <summary>
-        /// try to disconnect the existing database
-        /// </summary>
-        /// <returns></returns>
-        public void Dispose()
+        public void Write2DB(PersonObject person, SQLConnectionSettings s)
         {
             try
             {
-                sqlConnection.Close();
-                MessageBox.Show("DB Disconnected");
+                string Query = "insert into " + s.Database + "." + s.TableName + "(Grad,Name,Vorname,PicturePath,IsChecked,CardID) values('" +
+                    person.Grad + "','" +
+                    person.Name + "','" +
+                    person.Vorname + "','" +
+                    person.PhotoPath + "','" +
+                    Convert.ToByte(person.IsCheckedIn) + "','" +
+                    person.CardID + "');";
+
+                MySqlConnection con = Connect(s);
+                ExecuteSQLCommand(Query, con);
             }
             catch (Exception ex)
             {
-                MessageBox.Show("disconnection failed\n", ex.Message);
+                MessageBox.Show(ex.Message);
             }
         }
 
+        public void DeleteRow(COMMAND command, object value, SQLConnectionSettings s)
+        {
+            try
+            {
+                string Query = "delete * from " + s.Database + "." + s.TableName + " where " + command.ToString() + "=" + value + ";";
+                MySqlConnection con = Connect(s);
+                ExecuteSQLCommand(Query, con);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        public void Delete(COMMAND command, object value, SQLConnectionSettings s)
+        {
+            try
+            {
+                string Query = "delete from " + s.Database + "." + s.TableName + " where " + command.ToString() + "='" + value + "';";
+                MySqlConnection con = Connect(s);
+                ExecuteSQLCommand(Query, con);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        public void UpdateDB(PersonObject person, COMMAND command, object value, SQLConnectionSettings s)
+        {
+            try
+            {
+                MySqlConnection con = Connect(s);
+
+                string QuerySelect = "select * from " + s.Database + "." + s.TableName + " where " + command.ToString() + "=" + value + ";";
+                ExecuteSQLCommand(QuerySelect, con);
+
+                con = Connect(s);
+                string QueryUpdate = "update " + s.Database + "." + s.TableName + " SET " +
+                    "Grad='" + person.Grad + "'," +
+                    "Name='" + person.Name + "'," +
+                    "Vorname='" + person.Vorname + "'," +
+                    "PicturePath='" + person.PhotoPath + "'," +
+                    "IsChecked='" + Convert.ToInt32(person.IsCheckedIn) + "'," +
+                    "CardID='" + person.CardID + "'," +
+                    "CheckInTime='" + person.CheckInTime.ToString() + "'," +
+                    "CheckOutTime='" + person.CheckOutTime.ToString() + "'" +
+                    "where " + command.ToString() + " = " + value + ";";
+                ExecuteSQLCommand(QueryUpdate, con);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        public PersonObject ReadFromDB(COMMAND command, object value, SQLConnectionSettings s)
+        {
+            PersonObject person = new PersonObject();
+            try
+            {
+                string QuerySelect = "select * from " + s.Database + "." + s.TableName + " where " + command.ToString() + "='" + value + "';";
+                MySqlConnection con = Connect(s);
+                MySqlCommand sqlCommand = new MySqlCommand(QuerySelect, con);
+                //For offline connection we weill use  MySqlDataAdapter class.  
+                MySqlDataAdapter MyAdapter = new MySqlDataAdapter();
+                MyAdapter.SelectCommand = sqlCommand;
+                DataTable dTable = new DataTable();
+                MyAdapter.Fill(dTable);
+                DataRow row = dTable.Rows[0];
+
+                person.ID = (int)row[0];
+                person.Grad = (string)row[1];
+                person.Name = (string)row[2];
+                person.Vorname = (string)row[3];
+                person.PhotoPath = (string)row[4];
+                person.IsCheckedIn = Convert.ToBoolean(row[5]);
+                person.CardID = (string)row[6];
+
+                person.CheckInTime = (string)row[7];
+                person.CheckOutTime = (string)row[8];
 
 
+                sqlCommand.Connection.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                return null;
+            }
+            return person;
+        }
+
+        public List<PersonObject> ReadFromDB(SQLConnectionSettings s)
+        {
+            List<PersonObject> persons = new List<PersonObject>();
+            try
+            {
+                string Query = "select * from " + s.Database + "." + s.TableName + ";";
+                MySqlConnection con = Connect(s);
+                MySqlCommand command = new MySqlCommand(Query, con);
+                //For offline connection we weill use  MySqlDataAdapter class.  
+                MySqlDataAdapter MyAdapter = new MySqlDataAdapter();
+                MyAdapter.SelectCommand = command;
+                DataTable dTable = new DataTable();
+                MyAdapter.Fill(dTable);
+                foreach (DataRow row in dTable.Rows)
+                {
+                    PersonObject person = new PersonObject();
+                    person.ID = (int)row[0];
+                    person.Grad = (string)row[1];
+                    person.Name = (string)row[2];
+                    person.Vorname = (string)row[3];
+                    person.PhotoPath = (string)row[4];
+                    person.IsCheckedIn = Convert.ToBoolean(row[5]);
+                    person.CardID = (string)row[6];
+                    person.CheckInTime = (string)row[7];
+                    person.CheckOutTime = (string)row[8];
+                    persons.Add(person);
+                }
+                command.Connection.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "DB Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                return null;
+            }
+            return persons;
+        }
 
 
+        private bool ExecuteSQLCommand(string query, MySqlConnection connection)
+        {
+            try
+            {
+                if (connection == null)
+                {
+                    return false;
+                }
+                MySqlCommand sqlCommand = new MySqlCommand(query, connection);
+                MySqlDataReader dataReader = sqlCommand.ExecuteReader();
+                while (dataReader.Read()) { };
+                sqlCommand.Connection.Close();
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
+            return true;
+        }
+    }
 
+
+    public class SQLConnectionSettings
+    {
+        public string Server { get; set; }
+        public string User { get; set; }
+        public string Database { get; set; }
+        public string Port { get; set; }
+        public string Password { get; set; }
+        public string TableName { get; set; }
     }
 }

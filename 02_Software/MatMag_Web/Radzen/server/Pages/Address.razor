@@ -1,0 +1,100 @@
+﻿@page "/address"
+@layout MainLayout
+@inherits MatMag.Pages.AddressComponent
+
+@using Radzen
+@using Radzen.Blazor
+<RadzenContent Container="main">
+  <ChildContent>
+    <div class="row">
+      <div class="col-md-2">
+        <RadzenLabel Text="Anrede*">
+        </RadzenLabel>
+      </div>
+      <div class="col-md-3">
+        <RadzenDropDown Name="Dropdown0" TValue="dynamic">
+        </RadzenDropDown>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-2">
+        <RadzenLabel Text="Name*">
+        </RadzenLabel>
+      </div>
+      <div class="col-md-3">
+        <RadzenTextBox Name="Textbox0">
+        </RadzenTextBox>
+      </div>
+      <div class="col-md-2">
+        <RadzenLabel Text="Organisation">
+        </RadzenLabel>
+      </div>
+      <div class="col-md-3">
+        <RadzenTextBox Name="Textbox3">
+        </RadzenTextBox>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-2">
+        <RadzenLabel Text="Vorname*">
+        </RadzenLabel>
+      </div>
+      <div class="col-md-3">
+        <RadzenTextBox Name="Textbox1">
+        </RadzenTextBox>
+      </div>
+      <div class="col-md-2">
+        <RadzenLabel Text="PLZ">
+        </RadzenLabel>
+      </div>
+      <div class="col-md-3">
+        <RadzenTextBox Name="Textbox4">
+        </RadzenTextBox>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-2">
+        <RadzenLabel Text="E-Mail">
+        </RadzenLabel>
+      </div>
+      <div class="col-md-3">
+        <RadzenTextBox Name="Textbox2">
+        </RadzenTextBox>
+      </div>
+      <div class="col-md-2">
+        <RadzenLabel Text="Ort">
+        </RadzenLabel>
+      </div>
+      <div class="col-md-3">
+        <RadzenTextBox Name="Textbox5">
+        </RadzenTextBox>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-2">
+        <RadzenLabel Text="Telefon Nr.">
+        </RadzenLabel>
+      </div>
+      <div class="col-md-3">
+        <RadzenTextBox Name="Textbox6">
+        </RadzenTextBox>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-3">
+        <RadzenButton style="background-color: #4541ff" Text="Hinzufügen">
+        </RadzenButton>
+      </div>
+      <div class="col-md-3">
+        <RadzenButton style="background-color: #4541ff" Text="Abbrechen">
+        </RadzenButton>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <RadzenDataGrid @ref="datagrid0">
+        </RadzenDataGrid>
+      </div>
+    </div>
+  </ChildContent>
+</RadzenContent>
