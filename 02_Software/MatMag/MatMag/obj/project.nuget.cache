@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "KlibYtq249dfUQxGKP2FyxhZgkoht/pIy0AzWUlZ68MhGH5sec04iAjwjgkBAgaCH2u0HDrakGZ2DL9bmsbaww==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\marce\\Documents\\Git_repos\\MatMagSoftware\\02_Software\\MatMag\\MatMag\\MatMag.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\marce\\.nuget\\packages\\controlzex\\3.0.2.4\\controlzex.3.0.2.4.nupkg.sha512",
+    "C:\\Users\\marce\\.nuget\\packages\\mahapps.metro\\1.6.5\\mahapps.metro.1.6.5.nupkg.sha512"
+  ],
+  "logs": []
+}
