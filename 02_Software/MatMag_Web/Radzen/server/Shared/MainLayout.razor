@@ -1,0 +1,62 @@
+﻿@inherits MatMag.Layouts.MainLayoutComponent
+
+@using Radzen
+@using Radzen.Blazor
+<RadzenDialog />
+<RadzenNotification />
+<RadzenTooltip />
+<RadzenContextMenu />
+
+<RadzenHeader>
+  <ChildContent>
+    <div class="row justify-content-start align-items-center">
+      <div class="col-6 d-flex align-items-center">
+        <RadzenSidebarToggle Click="@SidebarToggle0Click">
+        </RadzenSidebarToggle>
+        <RadzenLabel Text="MatMag">
+        </RadzenLabel>
+      </div>
+      <div class="col-6 text-right">
+      </div>
+    </div>
+  </ChildContent>
+</RadzenHeader>
+<RadzenBody @ref="body0">
+  <ChildContent>
+    <RadzenContentContainer Name="main">
+    @Body
+    </RadzenContentContainer>
+  </ChildContent>
+</RadzenBody>
+<RadzenSidebar @ref="sidebar0">
+  <ChildContent>
+    <RadzenPanelMenu style="height: 100%">
+      <ChildContent>
+        <RadzenPanelMenuItem Path="home" Text="Home">
+        </RadzenPanelMenuItem>
+        <RadzenPanelMenuItem Path="orders" Text="Bestellungen">
+        </RadzenPanelMenuItem>
+        <RadzenPanelMenuItem Path="article" Text="Artikel">
+        </RadzenPanelMenuItem>
+        <RadzenPanelMenuItem Path="box" Text="Kisten">
+        </RadzenPanelMenuItem>
+        <RadzenPanelMenuItem Path="address" Text="Adressen">
+        </RadzenPanelMenuItem>
+        <RadzenPanelMenuItem Path="invoice" Text="Rechnungen">
+        </RadzenPanelMenuItem>
+        <RadzenPanelMenuItem Path="help" Text="Hilfe">
+        </RadzenPanelMenuItem>
+        <RadzenPanelMenuItem Path="users" Text="Benutzer">
+        </RadzenPanelMenuItem>
+        <RadzenPanelMenuItem Path="settings" Text="Einstellungen">
+        </RadzenPanelMenuItem>
+      </ChildContent>
+    </RadzenPanelMenu>
+  </ChildContent>
+</RadzenSidebar>
+<RadzenFooter>
+  <ChildContent>
+    <RadzenLabel Text="MatMag, Copyright Ⓒ 2021">
+    </RadzenLabel>
+  </ChildContent>
+</RadzenFooter>

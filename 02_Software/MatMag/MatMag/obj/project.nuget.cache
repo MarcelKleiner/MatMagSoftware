@@ -1,11 +1,30 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "KlibYtq249dfUQxGKP2FyxhZgkoht/pIy0AzWUlZ68MhGH5sec04iAjwjgkBAgaCH2u0HDrakGZ2DL9bmsbaww==",
   "success": true,
   "projectFilePath": "C:\\Users\\marce\\Documents\\Git_repos\\MatMagSoftware\\02_Software\\MatMag\\MatMag\\MatMag.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\marce\\.nuget\\packages\\controlzex\\3.0.2.4\\controlzex.3.0.2.4.nupkg.sha512",
     "C:\\Users\\marce\\.nuget\\packages\\mahapps.metro\\1.6.5\\mahapps.metro.1.6.5.nupkg.sha512"
+=======
+  "dgSpecHash": "xx1KHxGUv6DEY5hMx6EpeWBHts5EbuSPl/dLSxDKXYeTZJog/RYGse+fJukYOylgs9IsPtYe8F+1XECtnJHMSw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\marce\\Documents\\GitRepos\\MatMag\\02_Software\\MatMag\\MatMag\\MatMag.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\marce\\.nuget\\packages\\bouncycastle\\1.8.5\\bouncycastle.1.8.5.nupkg.sha512",
+    "C:\\Users\\marce\\.nuget\\packages\\controlzex\\3.0.2.4\\controlzex.3.0.2.4.nupkg.sha512",
+    "C:\\Users\\marce\\.nuget\\packages\\google.protobuf\\3.14.0\\google.protobuf.3.14.0.nupkg.sha512",
+    "C:\\Users\\marce\\.nuget\\packages\\k4os.compression.lz4\\1.1.11\\k4os.compression.lz4.1.1.11.nupkg.sha512",
+    "C:\\Users\\marce\\.nuget\\packages\\k4os.compression.lz4.streams\\1.1.11\\k4os.compression.lz4.streams.1.1.11.nupkg.sha512",
+    "C:\\Users\\marce\\.nuget\\packages\\k4os.hash.xxhash\\1.0.6\\k4os.hash.xxhash.1.0.6.nupkg.sha512",
+    "C:\\Users\\marce\\.nuget\\packages\\mahapps.metro\\1.6.5\\mahapps.metro.1.6.5.nupkg.sha512",
+    "C:\\Users\\marce\\.nuget\\packages\\mysql.data\\8.0.25\\mysql.data.8.0.25.nupkg.sha512",
+    "C:\\Users\\marce\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
+    "C:\\Users\\marce\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
+    "C:\\Users\\marce\\.nuget\\packages\\system.numerics.vectors\\4.4.0\\system.numerics.vectors.4.4.0.nupkg.sha512",
+    "C:\\Users\\marce\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.2\\system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512"
+>>>>>>> a76053da2dec48b376a6b0a8de02c3249baadd33
   ],
   "logs": []
 }

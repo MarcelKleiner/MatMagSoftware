@@ -67,6 +67,9 @@
     <Compile Include="Klassen\OrderCardControl\DataGridOrderOverwiev.cs" />
     <Compile Include="Klassen\OrderCardControl\DateTimeControl.cs" />
     <Compile Include="Klassen\OrderCardControl\QuantityControl.cs" />
+    <Compile Include="SQL\SQLConnection.cs" />
+    <Compile Include="SQL\SQLDataObject.cs" />
+    <Compile Include="Tools\Enums.cs" />
     <Compile Include="ucListView.xaml.cs">
       <DependentUpon>ucListView.xaml</DependentUpon>
     </Compile>
@@ -137,6 +140,9 @@
   <ItemGroup>
     <PackageReference Include="MahApps.Metro">
       <Version>1.6.5</Version>
+    </PackageReference>
+    <PackageReference Include="MySql.Data">
+      <Version>8.0.25</Version>
     </PackageReference>
   </ItemGroup>
   <ItemGroup>

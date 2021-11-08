@@ -4,16 +4,28 @@
 winexe
 C#
 .cs
+<<<<<<< HEAD
 C:\Users\marce\Documents\Git_repos\MatMagSoftware\02_Software\MatMag\test\obj\Debug\
+=======
+C:\Users\marce\Documents\GitRepos\MatMag\02_Software\MatMag\test\obj\Debug\
+>>>>>>> a76053da2dec48b376a6b0a8de02c3249baadd33
 test
 none
 false
 DEBUG;TRACE
+<<<<<<< HEAD
 C:\Users\marce\Documents\Git_repos\MatMagSoftware\02_Software\MatMag\test\App.xaml
 11151548125
 
 61930808643
 18-849828841
+=======
+C:\Users\marce\Documents\GitRepos\MatMag\02_Software\MatMag\test\App.xaml
+11151548125
+
+61434861427
+18792310789
+>>>>>>> a76053da2dec48b376a6b0a8de02c3249baadd33
 MainWindow.xaml;
 
 True

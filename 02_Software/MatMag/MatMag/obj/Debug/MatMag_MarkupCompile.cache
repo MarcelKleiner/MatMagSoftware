@@ -4,17 +4,29 @@
 winexe
 C#
 .cs
+<<<<<<< HEAD
 C:\Users\marce\Documents\Git_repos\MatMagSoftware\02_Software\MatMag\MatMag\obj\Debug\
+=======
+C:\Users\marce\Documents\GitRepos\MatMag\02_Software\MatMag\MatMag\obj\Debug\
+>>>>>>> a76053da2dec48b376a6b0a8de02c3249baadd33
 MatMag
 none
 false
 DEBUG;TRACE
+<<<<<<< HEAD
 C:\Users\marce\Documents\Git_repos\MatMagSoftware\02_Software\MatMag\MatMag\App.xaml
 6391848692
 
 151081043233
 16206272433
+=======
+C:\Users\marce\Documents\GitRepos\MatMag\02_Software\MatMag\MatMag\App.xaml
+6391848692
+
+181422344716
+361661765939
+>>>>>>> a76053da2dec48b376a6b0a8de02c3249baadd33
 Cards\cardArticle.xaml;Cards\cardAddress.xaml;Cards\cardOrder.xaml;DateTimePicker.xaml;MainWindow.xaml;ucListView.xaml;
 
-False
+True
 

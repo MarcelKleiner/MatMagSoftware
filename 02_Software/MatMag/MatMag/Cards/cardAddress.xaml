@@ -117,8 +117,8 @@
                         <TextBox x:Name="txtCustomerNr" Margin="0,0,30,0" TextWrapping="Wrap" VerticalAlignment="Center" BorderBrush="#FFD6D6D6" IsEnabled="False" Background="{x:Null}" Text="13545" Grid.Row="1" Padding="2" Grid.Column="1"/>
                         <Label x:Name="lblCustomerNr" Content="Kunden Nr." Margin="20,14,0,9.6" VerticalAlignment="Center" Grid.Row="1" HorizontalAlignment="Left" Width="90" Height="26"/>
                         <Label x:Name="lblName" Content="Name*" Margin="20,0,0,0" VerticalAlignment="Center" Grid.Row="3" HorizontalAlignment="Left" Width="77" Height="26"/>
-                        <ComboBox x:Name="cbSalutation" TabIndex="1" Margin="0,0,110,0" Grid.Row="2" VerticalAlignment="Center" IsEditable="True" Grid.Column="1">
-                            <ComboBoxItem Name="cbi1">Herr</ComboBoxItem>
+                        <ComboBox x:Name="cbTitle" TabIndex="1" Margin="0,0,110,0" Grid.Row="2" VerticalAlignment="Center" IsEditable="True" Grid.Column="1">
+                            <ComboBoxItem IsSelected="True" Name="cbi1">Herr</ComboBoxItem>
                             <ComboBoxItem Name="cbi2">Frau</ComboBoxItem>
                         </ComboBox>
                         <Label x:Name="lblFirstName" Content="Vorname*" Margin="20,0,10,0" VerticalAlignment="Center" Grid.Row="4"/>
@@ -128,13 +128,13 @@
                         <Label x:Name="lblEmail" Content="E-Mail" Margin="20,0,10,0" VerticalAlignment="Center" Grid.Row="6" Height="26"/>
                         <Label x:Name="lblOrganisation" Content="Organisation*" Margin="0,7.4,0,6.6" VerticalAlignment="Center" Grid.Row="4" Grid.Column="2" RenderTransformOrigin="0.622,-0.706" Height="26"/>
                         <Label x:Name="lblSalutatino" Content="Anrede*" Margin="20,0,0,0" VerticalAlignment="Center" Grid.Row="2" HorizontalAlignment="Left" Width="77" Height="26"/>
-                        <TextBox x:Name="txtFirstName" Grid.Column="1" Margin="0,0,30,0" Grid.Row="4" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" VerticalContentAlignment="Center"/>
-                        <TextBox x:Name="txtPlace" Grid.Column="1" Margin="0,0,30,0" Grid.Row="5" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" VerticalContentAlignment="Center"/>
-                        <TextBox x:Name="txtEmail" Grid.Column="1" Margin="0,0,30,0" Grid.Row="6" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" VerticalContentAlignment="Center"/>
+                        <TextBox x:Name="txtFirstName" Grid.Column="1" Margin="0,0,30,0" Grid.Row="4" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" VerticalContentAlignment="Center" Text="Lukas"/>
+                        <TextBox x:Name="txtPlace" Grid.Column="1" Margin="0,0,30,0" Grid.Row="5" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" VerticalContentAlignment="Center" Text="Obfelden"/>
+                        <TextBox x:Name="txtEmail" Grid.Column="1" Margin="0,0,30,0" Grid.Row="6" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" VerticalContentAlignment="Center" Text="l.Aebersold@hotmail.com&#x9;"/>
                         <TextBox x:Name="txtOrganisation" Grid.Column="3" Margin="0,0,30,0" Grid.Row="4" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" VerticalContentAlignment="Center"/>
-                        <TextBox x:Name="txtPLZ" Grid.Column="3" Margin="0,0,30,0" Grid.Row="5" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" VerticalContentAlignment="Center"/>
-                        <TextBox x:Name="txtTelephoneNr" Grid.Column="3" Margin="0,0,30,0" Grid.Row="6" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" VerticalContentAlignment="Center"/>
-                        <TextBox x:Name="txtName" Grid.Column="1" Margin="0,0,30,0" Grid.Row="3" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" VerticalContentAlignment="Center"/>
+                        <TextBox x:Name="txtPLZ" Grid.Column="3" Margin="0,0,30,0" Grid.Row="5" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" VerticalContentAlignment="Center" Text="8912"/>
+                        <TextBox x:Name="txtTelephoneNr" Grid.Column="3" Margin="0,0,30,0" Grid.Row="6" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" VerticalContentAlignment="Center" Text="079 xxx xx xx"/>
+                        <TextBox x:Name="txtName" Grid.Column="1" Margin="0,0,30,0" Grid.Row="3" TextWrapping="Wrap" VerticalAlignment="Center" Height="22" VerticalContentAlignment="Center" Text="Aebersold"/>
                     </Grid>
                     <DataGrid x:Name="dgOrderOverview_Copy" Margin="10" HorizontalGridLinesBrush="LightGray" VerticalGridLinesBrush="White" Background="White" BorderBrush="#FFCFCFCF" Panel.ZIndex="-13" FontSize="15" CanUserAddRows="False" ColumnHeaderHeight="35" AlternatingRowBackground="White" Foreground="Black" AlternationCount="1" RowHeaderWidth="80" ColumnWidth="SizeToHeader" AutoGenerateColumns="False" CanUserResizeRows="False" HeadersVisibility="Column" EnableColumnVirtualization="True" EnableRowVirtualization="False" Grid.Row="1">
                         <DataGrid.Resources>

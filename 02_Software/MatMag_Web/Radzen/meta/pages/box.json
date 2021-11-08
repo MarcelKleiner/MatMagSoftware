@@ -1,0 +1,269 @@
+{
+  "access": "Everybody",
+  "components": [
+    {
+      "components": [
+        {
+          "components": [
+            {
+              "class": "col-md-2 col-lg-2 col-xl-2",
+              "components": [
+                {
+                  "name": "label0",
+                  "text": "Kisten Nr.",
+                  "type": "label"
+                }
+              ],
+              "name": "col1",
+              "type": "col"
+            },
+            {
+              "class": "col-md-3",
+              "components": [
+                {
+                  "name": "textbox0",
+                  "type": "textbox",
+                  "value": ""
+                }
+              ],
+              "name": "col2",
+              "type": "col"
+            }
+          ],
+          "name": "row0",
+          "type": "row"
+        },
+        {
+          "components": [
+            {
+              "class": "col-md-2 col-lg-2 col-xl-2",
+              "components": [
+                {
+                  "name": "label1",
+                  "text": "Bezeichnung",
+                  "type": "label"
+                }
+              ],
+              "name": "col3",
+              "type": "col"
+            },
+            {
+              "class": "col-md-3",
+              "components": [
+                {
+                  "name": "textbox1",
+                  "type": "textbox",
+                  "value": ""
+                }
+              ],
+              "name": "col4",
+              "type": "col"
+            }
+          ],
+          "name": "row2",
+          "type": "row"
+        },
+        {
+          "components": [
+            {
+              "class": "col-md-2 col-lg-2 col-xl-2",
+              "components": [
+                {
+                  "name": "label6",
+                  "text": "Standort",
+                  "type": "label"
+                }
+              ],
+              "name": "col14",
+              "type": "col"
+            },
+            {
+              "class": "col-md-3",
+              "components": [
+                {
+                  "name": "textbox6",
+                  "type": "textbox",
+                  "value": ""
+                }
+              ],
+              "name": "col16",
+              "type": "col"
+            }
+          ],
+          "name": "row5",
+          "type": "row"
+        },
+        {
+          "components": [
+            {
+              "class": "col-md-2 col-lg-2 col-xl-2",
+              "components": [
+                {
+                  "name": "label2",
+                  "text": "Artikel",
+                  "type": "label"
+                }
+              ],
+              "name": "col6",
+              "type": "col"
+            },
+            {
+              "class": "col-md-4",
+              "components": [
+                {
+                  "name": "dropdown0",
+                  "style": {
+                    "width": "200px"
+                  },
+                  "type": "dropdown"
+                }
+              ],
+              "name": "col7",
+              "type": "col"
+            },
+            {
+              "class": "col-md-4",
+              "components": [
+                {
+                  "name": "button0",
+                  "style": {
+                    "backgroundColor": "#4541ff"
+                  },
+                  "template": "",
+                  "text": "Hinzufügen",
+                  "type": "button"
+                }
+              ],
+              "name": "col8",
+              "type": "col"
+            }
+          ],
+          "name": "row1",
+          "type": "row"
+        },
+        {
+          "components": [
+            {
+              "class": "col-md-3",
+              "components": [
+                {
+                  "name": "txtAdd",
+                  "style": {
+                    "backgroundColor": "#4541ff"
+                  },
+                  "template": "",
+                  "text": "Hinzufügen",
+                  "type": "button"
+                }
+              ],
+              "name": "col13",
+              "type": "col"
+            },
+            {
+              "class": "col-md-3",
+              "components": [
+                {
+                  "name": "txtCancle",
+                  "style": {
+                    "backgroundColor": "#4541ff"
+                  },
+                  "template": "",
+                  "text": "Abbrechen",
+                  "type": "button"
+                }
+              ],
+              "name": "col15",
+              "type": "col"
+            }
+          ],
+          "name": "row4",
+          "type": "row"
+        },
+        {
+          "components": [
+            {
+              "class": "col-md-8",
+              "components": [
+                {
+                  "components": [
+                    {
+                      "class": "col-md-12",
+                      "components": [
+                        {
+                          "name": "label3",
+                          "text": "Kisten",
+                          "type": "label"
+                        }
+                      ],
+                      "name": "col9",
+                      "type": "col"
+                    },
+                    {
+                      "class": "col-md-12",
+                      "components": [
+                        {
+                          "data": "",
+                          "name": "datagrid0",
+                          "type": "datagrid"
+                        }
+                      ],
+                      "name": "col10",
+                      "type": "col"
+                    }
+                  ],
+                  "name": "row6",
+                  "type": "row"
+                }
+              ],
+              "name": "col0",
+              "type": "col"
+            },
+            {
+              "class": "col-md-4",
+              "components": [
+                {
+                  "components": [
+                    {
+                      "class": "col-md-12",
+                      "components": [
+                        {
+                          "name": "label4",
+                          "text": "Artikel",
+                          "type": "label"
+                        }
+                      ],
+                      "name": "col11",
+                      "type": "col"
+                    },
+                    {
+                      "class": "col-md-12",
+                      "components": [
+                        {
+                          "data": "",
+                          "name": "datagrid1",
+                          "type": "datagrid"
+                        }
+                      ],
+                      "name": "col12",
+                      "type": "col"
+                    }
+                  ],
+                  "name": "row7",
+                  "type": "row"
+                }
+              ],
+              "name": "col5",
+              "type": "col"
+            }
+          ],
+          "name": "row3",
+          "type": "row"
+        }
+      ],
+      "container": "main",
+      "type": "content"
+    }
+  ],
+  "layout": "Main",
+  "name": "Box"
+}

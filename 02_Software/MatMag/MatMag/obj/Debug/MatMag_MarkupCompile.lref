@@ -1,4 +1,5 @@
 ﻿
+<<<<<<< HEAD
 FC:\Users\marce\Documents\Git_repos\MatMagSoftware\02_Software\MatMag\MatMag\App.xaml;;
 FC:\Users\marce\Documents\Git_repos\MatMagSoftware\02_Software\MatMag\MatMag\Cards\cardArticle.xaml;;
 FC:\Users\marce\Documents\Git_repos\MatMagSoftware\02_Software\MatMag\MatMag\Cards\cardAddress.xaml;;
@@ -6,4 +7,13 @@ FC:\Users\marce\Documents\Git_repos\MatMagSoftware\02_Software\MatMag\MatMag\Car
 FC:\Users\marce\Documents\Git_repos\MatMagSoftware\02_Software\MatMag\MatMag\DateTimePicker.xaml;;
 FC:\Users\marce\Documents\Git_repos\MatMagSoftware\02_Software\MatMag\MatMag\MainWindow.xaml;;
 FC:\Users\marce\Documents\Git_repos\MatMagSoftware\02_Software\MatMag\MatMag\ucListView.xaml;;
+=======
+FC:\Users\marce\Documents\GitRepos\MatMag\02_Software\MatMag\MatMag\App.xaml;;
+FC:\Users\marce\Documents\GitRepos\MatMag\02_Software\MatMag\MatMag\Cards\cardArticle.xaml;;
+FC:\Users\marce\Documents\GitRepos\MatMag\02_Software\MatMag\MatMag\Cards\cardAddress.xaml;;
+FC:\Users\marce\Documents\GitRepos\MatMag\02_Software\MatMag\MatMag\Cards\cardOrder.xaml;;
+FC:\Users\marce\Documents\GitRepos\MatMag\02_Software\MatMag\MatMag\DateTimePicker.xaml;;
+FC:\Users\marce\Documents\GitRepos\MatMag\02_Software\MatMag\MatMag\MainWindow.xaml;;
+FC:\Users\marce\Documents\GitRepos\MatMag\02_Software\MatMag\MatMag\ucListView.xaml;;
+>>>>>>> a76053da2dec48b376a6b0a8de02c3249baadd33
 

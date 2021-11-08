@@ -1,0 +1,290 @@
+{
+  "access": "Everybody",
+  "components": [
+    {
+      "components": [
+        {
+          "components": [
+            {
+              "class": "col-md-2",
+              "components": [
+                {
+                  "name": "txtTitle",
+                  "text": "Anrede*",
+                  "type": "label"
+                }
+              ],
+              "name": "col0",
+              "type": "col"
+            },
+            {
+              "class": "col-md-3",
+              "components": [
+                {
+                  "name": "dropdown0",
+                  "type": "dropdown"
+                }
+              ],
+              "name": "col1",
+              "type": "col"
+            }
+          ],
+          "name": "row0",
+          "type": "row"
+        },
+        {
+          "components": [
+            {
+              "class": "col-md-2",
+              "components": [
+                {
+                  "name": "txtName",
+                  "text": "Name*",
+                  "type": "label"
+                }
+              ],
+              "name": "col2",
+              "type": "col"
+            },
+            {
+              "class": "col-md-3",
+              "components": [
+                {
+                  "name": "textbox0",
+                  "type": "textbox",
+                  "value": ""
+                }
+              ],
+              "name": "col14",
+              "type": "col"
+            },
+            {
+              "class": "col-md-2",
+              "components": [
+                {
+                  "name": "txtOrganisation",
+                  "text": "Organisation",
+                  "type": "label"
+                }
+              ],
+              "name": "col7",
+              "type": "col"
+            },
+            {
+              "class": "col-md-3",
+              "components": [
+                {
+                  "name": "textbox3",
+                  "type": "textbox",
+                  "value": ""
+                }
+              ],
+              "name": "col4",
+              "type": "col"
+            }
+          ],
+          "name": "row1",
+          "type": "row"
+        },
+        {
+          "components": [
+            {
+              "class": "col-md-2",
+              "components": [
+                {
+                  "name": "txtSurname",
+                  "text": "Vorname*",
+                  "type": "label"
+                }
+              ],
+              "name": "col3",
+              "type": "col"
+            },
+            {
+              "class": "col-md-3",
+              "components": [
+                {
+                  "name": "textbox1",
+                  "type": "textbox",
+                  "value": ""
+                }
+              ],
+              "name": "col5",
+              "type": "col"
+            },
+            {
+              "class": "col-md-2",
+              "components": [
+                {
+                  "name": "txtPLZ",
+                  "text": "PLZ",
+                  "type": "label"
+                }
+              ],
+              "name": "col8",
+              "type": "col"
+            },
+            {
+              "class": "col-md-3",
+              "components": [
+                {
+                  "name": "textbox4",
+                  "type": "textbox",
+                  "value": ""
+                }
+              ],
+              "name": "col12",
+              "type": "col"
+            }
+          ],
+          "name": "row2",
+          "type": "row"
+        },
+        {
+          "components": [
+            {
+              "class": "col-md-2",
+              "components": [
+                {
+                  "name": "txtMail",
+                  "text": "E-Mail",
+                  "type": "label"
+                }
+              ],
+              "name": "col6",
+              "type": "col"
+            },
+            {
+              "class": "col-md-3",
+              "components": [
+                {
+                  "name": "textbox2",
+                  "type": "textbox",
+                  "value": ""
+                }
+              ],
+              "name": "col9",
+              "type": "col"
+            },
+            {
+              "class": "col-md-2",
+              "components": [
+                {
+                  "name": "txtPlace",
+                  "text": "Ort",
+                  "type": "label"
+                }
+              ],
+              "name": "col10",
+              "type": "col"
+            },
+            {
+              "class": "col-md-3",
+              "components": [
+                {
+                  "name": "textbox5",
+                  "type": "textbox",
+                  "value": ""
+                }
+              ],
+              "name": "col11",
+              "type": "col"
+            }
+          ],
+          "name": "row3",
+          "type": "row"
+        },
+        {
+          "components": [
+            {
+              "class": "col-md-2",
+              "components": [
+                {
+                  "name": "label0",
+                  "text": "Telefon Nr.",
+                  "type": "label"
+                }
+              ],
+              "name": "col17",
+              "type": "col"
+            },
+            {
+              "class": "col-md-3",
+              "components": [
+                {
+                  "name": "textbox6",
+                  "type": "textbox",
+                  "value": ""
+                }
+              ],
+              "name": "col18",
+              "type": "col"
+            }
+          ],
+          "name": "row6",
+          "type": "row"
+        },
+        {
+          "components": [
+            {
+              "class": "col-md-3",
+              "components": [
+                {
+                  "name": "txtAdd",
+                  "style": {
+                    "backgroundColor": "#4541ff"
+                  },
+                  "template": "",
+                  "text": "Hinzufügen",
+                  "type": "button"
+                }
+              ],
+              "name": "col13",
+              "type": "col"
+            },
+            {
+              "class": "col-md-3",
+              "components": [
+                {
+                  "name": "txtCancle",
+                  "style": {
+                    "backgroundColor": "#4541ff"
+                  },
+                  "template": "",
+                  "text": "Abbrechen",
+                  "type": "button"
+                }
+              ],
+              "name": "col15",
+              "type": "col"
+            }
+          ],
+          "name": "row4",
+          "type": "row"
+        },
+        {
+          "components": [
+            {
+              "class": "col-md-12",
+              "components": [
+                {
+                  "data": "",
+                  "name": "datagrid0",
+                  "type": "datagrid"
+                }
+              ],
+              "name": "col16",
+              "type": "col"
+            }
+          ],
+          "name": "row5",
+          "type": "row"
+        }
+      ],
+      "container": "main",
+      "type": "content"
+    }
+  ],
+  "layout": "Main",
+  "name": "Address"
+}

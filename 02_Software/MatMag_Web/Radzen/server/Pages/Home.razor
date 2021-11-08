@@ -1,0 +1,56 @@
+﻿@page "/home"
+@layout MainLayout
+@inherits MatMag.Pages.HomeComponent
+
+@using Radzen
+@using Radzen.Blazor
+<RadzenContent Container="main">
+  <ChildContent>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="row">
+          <div class="col-md-12" style="border-bottom: 1px solid #000000; margin-bottom: 10px">
+            <RadzenLabel style="float: right; width: 251px" Text="Bestellungen">
+            </RadzenLabel>
+          </div>
+          <div class="col-md-4">
+            <RadzenLabel Text="Suchen">
+            </RadzenLabel>
+          </div>
+          <div class="col-md-7">
+            <RadzenTextBox Name="Textbox0">
+            </RadzenTextBox>
+          </div>
+          <div class="col-md-12">
+            <RadzenDataGrid @ref="datagrid0">
+            </RadzenDataGrid>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="row">
+          <div class="col-md-12" style="border-bottom: 1px solid #000000; margin-bottom: 10px">
+            <RadzenLabel style="float: right; width: 251px" Text="Artikel/Kisten">
+            </RadzenLabel>
+          </div>
+          <div class="col-md-4">
+            <RadzenLabel Text="Suchen">
+            </RadzenLabel>
+          </div>
+          <div class="col-md-7">
+            <RadzenTextBox Name="Textbox1">
+            </RadzenTextBox>
+          </div>
+          <div class="col-md-12">
+            <RadzenDataGrid @ref="datagrid1">
+            </RadzenDataGrid>
+          </div>
+          <div class="col-md-12">
+            <RadzenDataGrid @ref="datagrid2">
+            </RadzenDataGrid>
+          </div>
+        </div>
+      </div>
+    </div>
+  </ChildContent>
+</RadzenContent>

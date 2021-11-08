@@ -1,0 +1,84 @@
+﻿@page "/users"
+@layout MainLayout
+@inherits MatMag.Pages.UsersComponent
+
+@using Radzen
+@using Radzen.Blazor
+<RadzenContent Container="main">
+  <ChildContent>
+    <div class="row">
+      <div class="col-xl-3 col-lg-3 col-md-3">
+        <RadzenLabel Text="Name*">
+        </RadzenLabel>
+      </div>
+      <div class="col-md-3">
+        <RadzenTextBox Name="Textbox0">
+        </RadzenTextBox>
+      </div>
+      <div class="col-md-2 col-lg-2 col-xl-2">
+        <RadzenLabel Text="Rechte">
+        </RadzenLabel>
+      </div>
+      <div class="col-md-3">
+        <RadzenDropDown Name="Dropdown0" TValue="dynamic">
+        </RadzenDropDown>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xl-3 col-lg-3 col-md-3">
+        <RadzenLabel Text="Vorname*">
+        </RadzenLabel>
+      </div>
+      <div class="col-md-3">
+        <RadzenTextBox Name="Textbox1">
+        </RadzenTextBox>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-3 col-xl-3 col-lg-3">
+        <RadzenLabel Text="E-Mail*">
+        </RadzenLabel>
+      </div>
+      <div class="col-md-3">
+        <RadzenTextBox Name="Textbox2">
+        </RadzenTextBox>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xl-3 col-lg-3 col-md-3">
+        <RadzenLabel Text="Passwort*">
+        </RadzenLabel>
+      </div>
+      <div class="col-md-3">
+        <RadzenTextBox Name="Textbox3">
+        </RadzenTextBox>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-3 col-lg-3 col-xl-3">
+        <RadzenLabel Text="Passwort bestätigen*">
+        </RadzenLabel>
+      </div>
+      <div class="col-md-3">
+        <RadzenTextBox Name="Textbox4">
+        </RadzenTextBox>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-3">
+        <RadzenButton style="background-color: #4541ff" Text="Hinzufügen">
+        </RadzenButton>
+      </div>
+      <div class="col-md-3">
+        <RadzenButton style="background-color: #4541ff" Text="Abbrechen">
+        </RadzenButton>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <RadzenDataGrid @ref="datagrid0" TItem="dynamic">
+        </RadzenDataGrid>
+      </div>
+    </div>
+  </ChildContent>
+</RadzenContent>

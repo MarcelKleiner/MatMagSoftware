@@ -1,0 +1,348 @@
+{
+  "access": "Everybody",
+  "components": [
+    {
+      "components": [
+        {
+          "components": [
+            {
+              "class": "col-md-5",
+              "components": [
+                {
+                  "components": [
+                    {
+                      "class": "col-md-4",
+                      "components": [
+                        {
+                          "name": "label0",
+                          "text": "Suchen",
+                          "type": "label"
+                        }
+                      ],
+                      "name": "col2",
+                      "type": "col"
+                    },
+                    {
+                      "class": "col-md-5",
+                      "components": [
+                        {
+                          "name": "textbox0",
+                          "type": "textbox",
+                          "value": ""
+                        }
+                      ],
+                      "name": "col3",
+                      "type": "col"
+                    }
+                  ],
+                  "name": "row1",
+                  "type": "row"
+                },
+                {
+                  "components": [
+                    {
+                      "class": "col-md-12",
+                      "components": [
+                        {
+                          "items": [
+                            {
+                              "disabled": false,
+                              "text": "Alle",
+                              "visible": true
+                            },
+                            {
+                              "text": "Offen"
+                            },
+                            {
+                              "text": "Abgeschlossen"
+                            }
+                          ],
+                          "name": "radiobuttonlist0",
+                          "type": "radiobuttonlist"
+                        }
+                      ],
+                      "name": "col4",
+                      "type": "col"
+                    }
+                  ],
+                  "name": "row3",
+                  "type": "row"
+                },
+                {
+                  "components": [
+                    {
+                      "class": "col-md-12",
+                      "components": [
+                        {
+                          "data": "",
+                          "name": "datagrid0",
+                          "type": "datagrid"
+                        }
+                      ],
+                      "name": "col5",
+                      "type": "col"
+                    }
+                  ],
+                  "name": "row4",
+                  "type": "row"
+                }
+              ],
+              "name": "col0",
+              "type": "col"
+            },
+            {
+              "class": "col-md-7",
+              "components": [
+                {
+                  "components": [
+                    {
+                      "class": "col-md-4",
+                      "components": [
+                        {
+                          "name": "label1",
+                          "text": "Rechnungs Nr.",
+                          "type": "label"
+                        }
+                      ],
+                      "name": "col6",
+                      "type": "col"
+                    },
+                    {
+                      "class": "col-md-5",
+                      "components": [
+                        {
+                          "name": "textbox2",
+                          "style": {
+                            "width": "179.40000915527344px"
+                          },
+                          "type": "textbox",
+                          "value": ""
+                        }
+                      ],
+                      "name": "col11",
+                      "type": "col"
+                    }
+                  ],
+                  "name": "row2",
+                  "type": "row"
+                },
+                {
+                  "components": [
+                    {
+                      "class": "col-md-4",
+                      "components": [
+                        {
+                          "name": "label2",
+                          "text": "Besteller",
+                          "type": "label"
+                        }
+                      ],
+                      "name": "col7",
+                      "type": "col"
+                    },
+                    {
+                      "class": "col-md-5",
+                      "components": [
+                        {
+                          "name": "dropdown1",
+                          "type": "dropdown"
+                        }
+                      ],
+                      "name": "col12",
+                      "type": "col"
+                    }
+                  ],
+                  "name": "row5",
+                  "type": "row"
+                },
+                {
+                  "components": [
+                    {
+                      "class": "col-md-4",
+                      "components": [
+                        {
+                          "name": "label4",
+                          "text": "Rechnungsdatum",
+                          "type": "label"
+                        }
+                      ],
+                      "name": "col14",
+                      "type": "col"
+                    },
+                    {
+                      "class": "col-md-5",
+                      "components": [
+                        {
+                          "name": "datepicker1",
+                          "type": "datepicker"
+                        }
+                      ],
+                      "name": "col13",
+                      "type": "col"
+                    }
+                  ],
+                  "name": "row7",
+                  "type": "row"
+                },
+                {
+                  "components": [
+                    {
+                      "class": "col-md-4",
+                      "components": [
+                        {
+                          "name": "label6",
+                          "text": "Position",
+                          "type": "label"
+                        }
+                      ],
+                      "name": "col15",
+                      "type": "col"
+                    },
+                    {
+                      "class": "col-md-5",
+                      "components": [
+                        {
+                          "name": "dropdown2",
+                          "type": "dropdown"
+                        }
+                      ],
+                      "name": "col17",
+                      "type": "col"
+                    },
+                    {
+                      "class": "col-md-6 col-lg-5 col-xl-12",
+                      "components": [
+                        {
+                          "name": "txtAdd",
+                          "style": {
+                            "backgroundColor": "#4541ff"
+                          },
+                          "template": "",
+                          "text": "Hinzufügen",
+                          "type": "button"
+                        }
+                      ],
+                      "name": "col18",
+                      "type": "col"
+                    }
+                  ],
+                  "name": "row9",
+                  "type": "row"
+                },
+                {
+                  "components": [
+                    {
+                      "class": "col-md-12",
+                      "components": [
+                        {
+                          "components": [
+                            {
+                              "class": "col-md-4",
+                              "components": [
+                                {
+                                  "name": "label7",
+                                  "text": "Rechnungsstatus",
+                                  "type": "label"
+                                }
+                              ],
+                              "name": "col22",
+                              "type": "col"
+                            },
+                            {
+                              "class": "col-md-5",
+                              "components": [
+                                {
+                                  "name": "dropdown0",
+                                  "type": "dropdown"
+                                }
+                              ],
+                              "name": "col23",
+                              "type": "col"
+                            }
+                          ],
+                          "name": "row12",
+                          "type": "row"
+                        },
+                        {
+                          "data": "",
+                          "name": "datagrid1",
+                          "type": "datagrid"
+                        }
+                      ],
+                      "name": "col19",
+                      "type": "col"
+                    }
+                  ],
+                  "name": "row10",
+                  "type": "row"
+                },
+                {
+                  "components": [
+                    {
+                      "class": "col-md-4",
+                      "components": [
+                        {
+                          "name": "button0",
+                          "style": {
+                            "backgroundColor": "#4541ff"
+                          },
+                          "template": "",
+                          "text": "Bestellen",
+                          "type": "button"
+                        }
+                      ],
+                      "name": "col20",
+                      "type": "col"
+                    },
+                    {
+                      "class": "col-md-4",
+                      "components": [
+                        {
+                          "name": "button1",
+                          "style": {
+                            "backgroundColor": "#4541ff"
+                          },
+                          "template": "",
+                          "text": "Abbrechen",
+                          "type": "button"
+                        }
+                      ],
+                      "name": "col21",
+                      "type": "col"
+                    },
+                    {
+                      "class": "col-md-4",
+                      "components": [
+                        {
+                          "name": "button2",
+                          "style": {
+                            "backgroundColor": "#4541ff"
+                          },
+                          "template": "",
+                          "text": "Rechnung",
+                          "type": "button"
+                        }
+                      ],
+                      "name": "col24",
+                      "type": "col"
+                    }
+                  ],
+                  "name": "row11",
+                  "type": "row"
+                }
+              ],
+              "name": "col1",
+              "type": "col"
+            }
+          ],
+          "name": "row0",
+          "type": "row"
+        }
+      ],
+      "container": "main",
+      "type": "content"
+    }
+  ],
+  "layout": "Main",
+  "name": "Invoice"
+}

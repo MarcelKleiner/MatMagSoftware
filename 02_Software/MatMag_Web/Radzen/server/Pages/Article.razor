@@ -1,0 +1,91 @@
+﻿@page "/article"
+@layout MainLayout
+@inherits MatMag.Pages.ArticleComponent
+
+@using Radzen
+@using Radzen.Blazor
+<RadzenContent Container="main">
+  <ChildContent>
+    <div class="row">
+      <div class="col-md-2 col-lg-2 col-xl-2">
+        <RadzenLabel Text="Artikel Nr.">
+        </RadzenLabel>
+      </div>
+      <div class="col-md-3">
+        <RadzenTextBox Name="Textbox0">
+        </RadzenTextBox>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-2 col-lg-2 col-xl-2">
+        <RadzenLabel Text="Bezeichnung">
+        </RadzenLabel>
+      </div>
+      <div class="col-md-3">
+        <RadzenTextBox Name="Textbox1">
+        </RadzenTextBox>
+      </div>
+      <div class="col-md-2 col-lg-2 col-xl-2">
+        <RadzenLabel Text="Alias">
+        </RadzenLabel>
+      </div>
+      <div class="col-md-3">
+        <RadzenTextBox Name="Textbox6">
+        </RadzenTextBox>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-2 col-lg-2 col-xl-2">
+        <RadzenLabel Text="Preis int. K
+        ">
+        </RadzenLabel>
+      </div>
+      <div class="col-md-3">
+        <RadzenTextBox Name="Textbox2">
+        </RadzenTextBox>
+      </div>
+      <div class="col-md-2">
+        <RadzenLabel Text="Preis ext. K">
+        </RadzenLabel>
+      </div>
+      <div class="col-md-3">
+        <RadzenTextBox Name="Textbox4">
+        </RadzenTextBox>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-2 col-lg-2 col-xl-2">
+        <RadzenLabel Text="Preis int. NK">
+        </RadzenLabel>
+      </div>
+      <div class="col-md-3">
+        <RadzenTextBox Name="Textbox3">
+        </RadzenTextBox>
+      </div>
+      <div class="col-md-2">
+        <RadzenLabel Text="Preis ext. NK">
+        </RadzenLabel>
+      </div>
+      <div class="col-md-3">
+        <RadzenTextBox Name="Textbox5">
+        </RadzenTextBox>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-3">
+        <RadzenButton style="background-color: #4541ff" Text="Hinzufügen">
+        </RadzenButton>
+      </div>
+      <div class="col-md-3">
+        <RadzenButton style="background-color: #4541ff" Text="Abbrechen">
+        </RadzenButton>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <RadzenDataGrid @ref="datagrid0">
+        </RadzenDataGrid>
+      </div>
+    </div>
+  </ChildContent>
+</RadzenContent>

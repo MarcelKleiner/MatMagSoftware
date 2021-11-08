@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "C:\\Users\\marce\\Documents\\Git_repos\\MatMagSoftware\\02_Software\\MatMag\\MatMag\\MatMag.csproj": {}
   },
   "projects": {
@@ -12,6 +13,19 @@
         "projectPath": "C:\\Users\\marce\\Documents\\Git_repos\\MatMagSoftware\\02_Software\\MatMag\\MatMag\\MatMag.csproj",
         "packagesPath": "C:\\Users\\marce\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\marce\\Documents\\Git_repos\\MatMagSoftware\\02_Software\\MatMag\\MatMag\\obj\\",
+=======
+    "C:\\Users\\marce\\Documents\\GitRepos\\MatMag\\02_Software\\MatMag\\MatMag\\MatMag.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\marce\\Documents\\GitRepos\\MatMag\\02_Software\\MatMag\\MatMag\\MatMag.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\marce\\Documents\\GitRepos\\MatMag\\02_Software\\MatMag\\MatMag\\MatMag.csproj",
+        "projectName": "MatMag",
+        "projectPath": "C:\\Users\\marce\\Documents\\GitRepos\\MatMag\\02_Software\\MatMag\\MatMag\\MatMag.csproj",
+        "packagesPath": "C:\\Users\\marce\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\marce\\Documents\\GitRepos\\MatMag\\02_Software\\MatMag\\MatMag\\obj\\",
+>>>>>>> a76053da2dec48b376a6b0a8de02c3249baadd33
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "configFilePaths": [
@@ -37,6 +51,10 @@
             "MahApps.Metro": {
               "target": "Package",
               "version": "[1.6.5, )"
+            },
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[8.0.25, )"
             }
           }
         }
